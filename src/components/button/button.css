@@ -7,13 +7,14 @@
     color: var(--nord0);
     cursor: pointer;
     transition: 0.3s;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-size: 1em
 }
 
 .btn:hover {
     filter: brightness(0.9);
 }
 .btn:focus {
-    border: 2px solid var(--nord8);
+    /* border: 5px solid rgba(25, 25, 25, 0.5); */
     /* border- */
 }
