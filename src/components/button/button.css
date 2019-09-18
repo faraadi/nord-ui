@@ -1,0 +1,19 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: var(--nord7);
+    color: var(--nord0);
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+.btn:focus {
+    border: 2px solid var(--nord8);
+    /* border- */
+}
