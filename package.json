@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
+    "dev": "parcel -p 3000 ./src/index.html",
+    "build": "parcel build ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
