@@ -1,0 +1,7 @@
+@import './variables.css';
+
+.box {
+    background: var(--bg-color);
+    width: 100px;
+    height: 100px
+}
