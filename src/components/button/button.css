@@ -1,20 +1,71 @@
 .btn {
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     outline: none;
-    border-radius: 4px;
-    background: var(--nord7);
-    color: var(--nord0);
     cursor: pointer;
-    transition: 0.3s;
+    transition: var(--default--transition);
     box-sizing: border-box;
-    font-size: 1em
+    font-size: 1em;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px -3px black;
+    position: relative;
+    color: var(--nord6)
 }
 
-.btn:hover {
+.btn.primary {
+    background-color: var(--nord7);
+}
+
+.btn.secondary {
+    background-color: var(--nord1);
+}
+
+.btn.large {
+    padding: 12px 20px;
+    font-size: 1.2em;
+}
+
+.btn.small {
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+.btn:hover, .btn.hover {
     filter: brightness(0.9);
 }
-.btn:focus {
-    /* border: 5px solid rgba(25, 25, 25, 0.5); */
-    /* border- */
+
+.btn:active, .btn.active {
+    box-shadow: inset 0px 0px 6px -3px black;
+    filter: brightness(0.8);
+}
+
+.btn.loading {
+    pointer-events: none;
+    color: transparent;
+}
+
+.btn.loading::after {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: "";
+    border: 2px solid transparent;
+    border-radius: 100%;
+    border-top-color: var(--nord4);
+    animation: 0.5s btn-loading linear infinite;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: calc(50% - 10px);
+}
+
+@keyframes btn-loading {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1turn)
+    } 
 }
