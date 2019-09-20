@@ -57,8 +57,8 @@
     border-top-color: var(--nord4);
     animation: 0.5s btn-loading linear infinite;
     position: absolute;
-    top: calc(50% - 10px);
-    right: calc(50% - 10px);
+    top: calc(50% - 11px);
+    right: calc(50% - 11px);
 }
 
 @keyframes btn-loading {
