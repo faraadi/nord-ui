@@ -10,7 +10,8 @@
     border-radius: 4px;
     box-shadow: 0px 0px 6px -3px black;
     position: relative;
-    color: var(--nord6)
+    color: var(--nord6);
+    text-align: center
 }
 
 .btn.primary {
