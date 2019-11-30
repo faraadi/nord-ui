@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box
+}
+img {
+    width: 100%
+}
+body {
+    margin: 0;
+    background-color: var(--nord6)
+}

@@ -1,13 +1,4 @@
 @import './fonts/fonts.css';
-
-body {
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box
-}
-
 .color-palette-container {
     display: flex;
     border-radius: 4px
