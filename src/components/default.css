@@ -8,3 +8,6 @@ body {
     margin: 0;
     background-color: var(--nord6)
 }
+a {
+    text-decoration: none
+}
