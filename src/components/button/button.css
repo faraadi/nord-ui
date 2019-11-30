@@ -1,5 +1,6 @@
 .btn {
     padding: 10px 15px;
+    min-width: 100px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -14,20 +15,34 @@
 
 .btn.primary {
     background-color: var(--nord7);
+    color: var(--nord1);
 }
-
 .btn.secondary {
     background-color: var(--nord1);
+}
+.btn.success {
+    background-color: var(--nord14);
+}
+.btn.danger {
+    background-color: var(--nord11);
+}
+.btn.info {
+    background-color: var(--nord10);
+}
+.btn.warning {
+    background-color: var(--nord12);
 }
 
 .btn.large {
     padding: 12px 20px;
     font-size: 1.2em;
+    min-width: 125px;
 }
 
 .btn.small {
     padding: 8px 12px;
     font-size: 0.9em;
+    min-width: 75px;
 }
 
 .btn:hover, .btn.hover {
@@ -35,15 +50,23 @@
 }
 
 .btn:active, .btn.active {
-    box-shadow: inset 0px 0px 6px -3px black;
+    /* box-shadow: inset 0px 0px 6px -3px black; */
     filter: brightness(0.8);
+}
+.btn:disabled {
+    filter: opacity(0.7);
+    cursor: not-allowed;
 }
 
 .btn.loading {
     pointer-events: none;
     color: transparent;
+    cursor: not-allowed;
 }
-
+.btn.loading::before {
+    width: 100%;
+    height: 100%;
+}
 .btn.loading::after {
     cursor: not-allowed;
     pointer-events: none;
@@ -55,7 +78,7 @@
     border: 2px solid transparent;
     border-radius: 100%;
     border-top-color: var(--nord4);
-    animation: 0.5s btn-loading linear infinite;
+    animation: 0.8s btn-loading linear infinite;
     position: absolute;
     top: calc(50% - 11px);
     right: calc(50% - 11px);

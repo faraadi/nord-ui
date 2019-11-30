@@ -1,2 +1,2 @@
 const postcss = require("postcss");
-module.exports = postcss([require('postcss-prefixer')({ "prefix": "nui-" })]);
+module.exports = postcss(/* [require('postcss-prefixer')({ "prefix": "nui-" })] */);
