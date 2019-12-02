@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "parcel -p 3000 ./src/index.html",
-    "build": "parcel build ./src/index.html",
+    "dev": "webpack-dev-server --config ./configs/webpack.config.dev.js",
+    "build": "webpack --config ./configs/webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,5 +21,6 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
-  }
+  },
+  "dependencies": {}
 }
