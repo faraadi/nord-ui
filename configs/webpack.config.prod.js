@@ -13,7 +13,7 @@ const singleBundleConfig = {
     target: 'web',
     devtool: "none",
     entry: {
-        main: path.resolve(srcPath, "components/index.css")
+        main: path.resolve(srcPath, 'index.css')
     },
     output: {
         path: distPath
@@ -59,7 +59,7 @@ const splittedBudlesConfig = {
         button: path.resolve(srcPath, "components/button/button.css"),
         card: path.resolve(srcPath, "components/card/card.css"),
         grid: path.resolve(srcPath, "components/grid/grid.css"),
-        base: [path.resolve(srcPath, "components/variables.css"), path.resolve(srcPath, "components/default.css")]
+        base: [path.resolve(srcPath, "variables.css"), path.resolve(srcPath, "default.css")]
     },
     output: {
         path: path.resolve(distPath) + "/chunks"
