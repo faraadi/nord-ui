@@ -1,10 +1,10 @@
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const rootPath = path.resolve(__dirname, "../");
 const srcPath = path.resolve(rootPath, "src");
 const distPath = path.resolve(rootPath, "dist");
+const demoPath = path.resolve(rootPath, "demo");
 
 const config = {
     entry: './src/components/index.css',
@@ -24,13 +24,13 @@ const config = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, '../src'),
+        contentBase: [demoPath, srcPath],
         compress: true,
         port: 3000
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(srcPath, "index.html")
+            template: path.resolve(demoPath, "index.html")
         })
     ]
 };
