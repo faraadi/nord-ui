@@ -1,10 +1,8 @@
 .card {
-    /* border: 1px solid var(--nord0); */
     border-radius: 4px;
     background-color: white;
     position: relative;
     box-shadow: 0 2px 5px -7px var(--nord1), 0 1px 5px -7px var(--nord1), 0 1px 3px 0 var(--nord1);
-    overflow: hidden;
 }
 
 .card.minimal {
@@ -14,4 +12,8 @@
 
 .card-body {
     padding: 15px;
+}
+
+.card-thumb img {
+	border-radius: 4px 4px 0 0 ;
 }
