@@ -2,6 +2,7 @@
 	display: inline-block;
 	position: relative;
 }
+
 .tooltip {
 	display: flex;
 	justify-content: center;
@@ -11,6 +12,7 @@
 	top: calc(100% + var(--tooltip-offset));
 	left: 0;
 	right: 0;
+	z-index: 1;
 
 	visibility: hidden;
 	transition: var(--default--transition);
@@ -23,6 +25,7 @@
 	text-align: center;
 	border-radius: 4px;
 }
+
 .tooltip-target:hover .tooltip {
 	visibility: visible;
 	opacity: 1;
@@ -33,9 +36,11 @@
 	top: unset;
 	bottom: calc(100% + var(--tooltip-offset));
 }
+
 .tooltip.tooltip-bottom {
 	top: calc(100% + var(--tooltip-offset));
 }
+
 .tooltip.tooltip-right {
     top: 0;
     bottom: 0;
