@@ -6,6 +6,7 @@
 .tooltip {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: auto;
 
 	position: absolute;
@@ -15,7 +16,7 @@
 	z-index: 1;
 
 	visibility: hidden;
-	transition: var(--default--transition);
+	transition: opacity var(--default--transition);
 	opacity: 0;
 }
 .tooltip-text {
@@ -46,7 +47,6 @@
     bottom: 0;
     left: unset;
     right: calc(-100% - var(--tooltip-offset));
-    align-items: center;
 }
 
 .tooltip.tooltip-left {
@@ -54,5 +54,4 @@
     bottom: 0;
     right: unset;
     left: calc(-100% - var(--tooltip-offset));
-    align-items: center;
 }
