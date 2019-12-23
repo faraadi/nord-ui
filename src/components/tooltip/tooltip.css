@@ -12,8 +12,8 @@
 	opacity: 0;
 	top: 100%;
 	text-align: center;
-	display: block;
-	right: -100%;
+	width: fit-content;
+	display: inline-block;
 	border-radius: 4px;
 }
 .tooltip:hover .tooltip-text {
