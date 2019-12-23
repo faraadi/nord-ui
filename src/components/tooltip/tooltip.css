@@ -13,7 +13,7 @@
 	right: 0;
 
 	visibility: hidden;
-	transition: 0.3s;
+	transition: var(--default--transition);
 	opacity: 0;
 }
 .tooltip-text {
@@ -27,4 +27,27 @@
 	visibility: visible;
 	opacity: 1;
 	transition: opacity 0.3s;
+}
+
+.tooltip.tooltip-top {
+	top: unset;
+	bottom: calc(100% + var(--tooltip-offset));
+}
+.tooltip.tooltip-bottom {
+	top: calc(100% + var(--tooltip-offset));
+}
+.tooltip.tooltip-right {
+    top: 0;
+    bottom: 0;
+    left: unset;
+    right: calc(-100% - var(--tooltip-offset));
+    align-items: center;
+}
+
+.tooltip.tooltip-left {
+    top: 0;
+    bottom: 0;
+    right: unset;
+    left: calc(-100% - var(--tooltip-offset));
+    align-items: center;
 }
