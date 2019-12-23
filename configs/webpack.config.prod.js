@@ -42,7 +42,6 @@ const singleBundleConfig = {
         })]
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'nordic.min.css',
             ignoreOrder: false
@@ -62,7 +61,7 @@ const splittedBudlesConfig = {
         base: [path.resolve(srcPath, "variables.css"), path.resolve(srcPath, "default.css")]
     },
     output: {
-        path: path.resolve(distPath) + "/chunks"
+        path: path.resolve(distPath, "chunks")
     },
     module: {
         rules: [
