@@ -8,7 +8,7 @@
 	width: auto;
 
 	position: absolute;
-	top: calc(100% + 5px);
+	top: calc(100% + var(--tooltip-offset));
 	left: 0;
 	right: 0;
 

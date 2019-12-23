@@ -20,5 +20,7 @@
     --nord14: #A3BE8C;
     --nord15: #B48EAD;
 
-    --default--transition: 0.3s
+    --default--transition: 0.3s;
+
+    --tooltip-offset: 5px;
 }
