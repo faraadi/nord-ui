@@ -59,6 +59,7 @@ const splittedBudlesConfig = {
         card: path.resolve(srcPath, "components/card/card.css"),
         grid: path.resolve(srcPath, "components/grid/grid.css"),
         tooltip: path.resolve(srcPath, "components/tooltip/tooltip.css"),
+        colors: path.resolve(srcPath, "components/colors/colors.css"),
         base: [path.resolve(srcPath, "variables.css"), path.resolve(srcPath, "default.css")]
     },
     output: {
