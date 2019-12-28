@@ -1,3 +1,6 @@
+.text-darkest {
+	color: #242933
+}
 .text-nord0 {
 	color: var(--nord0);
 }
@@ -48,7 +51,9 @@
 }
 
 
-
+.bg-darkest {
+	color: #242933
+}
 .bg-nord0 {
 	background-color: var(--nord0);
 }
