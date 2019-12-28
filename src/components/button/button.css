@@ -3,7 +3,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    transition: var(--default--transition);
+    transition: filter  var(--default--transition);
     box-sizing: border-box;
     font-size: 1.1em;
     border-radius: 4px;
