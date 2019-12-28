@@ -1,5 +1,5 @@
 .btn {
-    padding: 10px 15px;
+    padding: 8px 18px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -35,12 +35,12 @@
 }
 
 .btn.large {
-    padding: 12px 20px;
+    padding: 10px 22px;
     font-size: 1.3em;
 }
 
 .btn.small {
-    padding: 8px 12px;
+    padding: 6px 14px;
     font-size: 1em;
 }
 
