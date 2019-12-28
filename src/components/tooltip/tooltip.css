@@ -46,13 +46,15 @@
 .tooltip.tooltip-right {
     top: 0;
     bottom: 0;
-    left: unset;
-    right: calc(-100% - var(--tooltip-offset));
+    left: calc(100% + var(--tooltip-offset));
+    /*right: calc(-100% - var(--tooltip-offset));*/
+    right: unset;
 }
 
 .tooltip.tooltip-left {
     top: 0;
     bottom: 0;
-    right: unset;
-    left: calc(-100% - var(--tooltip-offset));
+    right: calc(100% + var(--tooltip-offset));;
+    /*left: calc(-100% - var(--tooltip-offset));*/
+    left: unset;
 }
