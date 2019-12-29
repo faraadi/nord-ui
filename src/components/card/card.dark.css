@@ -1,0 +1,7 @@
+.dark .card {
+	background-color: var(--nord0);
+	color: var(--nord6)
+}
+.dark .card.minimal {
+	border-color: var(--nord3)
+}
