@@ -10,6 +10,9 @@
 </head>
 
 <body class="dark">
+    <div class="row">
+        <button class="btn primary theme-toggler">change theme</button>
+    </div>
     <div class="showcase row row-justify-center row-gutter-8">
         <div class="col-xs-6">
             <div class="color-palette-container row">
@@ -157,6 +160,14 @@
             </p>
         </div>
     </div>
+
+    <script type="text/javascript">
+        const themeToggler = document.querySelector(".theme-toggler");
+        console.log(themeToggler)
+        themeToggler.onclick = function() {
+            document.body.classList.toggle("dark")
+        }
+    </script>
 </body>
 
 </html>
