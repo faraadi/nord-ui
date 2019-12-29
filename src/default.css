@@ -6,7 +6,9 @@ img {
 }
 body {
     margin: 0;
-    background-color: var(--nord6)
+    background-color: var(--nord6);
+    	transition-duration: var(--default--transition);
+	transition-property: color background-color
 }
 a {
     text-decoration: none
