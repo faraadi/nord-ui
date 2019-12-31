@@ -1,17 +1,18 @@
 .callout {
 	background-color: var(--nord4);
-    border-left: 2px solid;
+    border-left: 3px solid;
     border-color: var(--nord3);
 	padding: 20px 0 20px var(--callout-side-offset);
+	color: var(--nord1);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 
 .callout-title {
 	font-size: 2em
 }
-
 .callout.primary {
 	background-color: var(--nord7-pale);
-	color: var(--nord1);
 	border-color: var(--nord7);
 }
 .callout.primary .callout-title {
@@ -19,16 +20,13 @@
 }
 .callout.secondary {
 	background-color: var(--nord1-pale);
-	color: var(--nord1);
 	border-color: var(--nord1);
 }
 .callout.secondary .callout-title {
 	color: var(--nord1);
 }
-
 .callout.success {
 	background-color: var(--nord14-pale);
-	color: var(--nord1);
 	border-color: var(--nord14);
 }
 .callout.success .callout-title {
@@ -36,16 +34,13 @@
 }
 .callout.danger {
 	background-color: var(--nord11-pale);
-	color: var(--nord1);
 	border-color: var(--nord11);
 }
 .callout.danger .callout-title {
 	color: var(--nord11);
 }
-
 .callout.warning {
 	background-color: var(--nord13-pale);
-	color: var(--nord1);
 	border-color: var(--nord13);
 }
 .callout.warning .callout-title {
@@ -53,7 +48,6 @@
 }
 .callout.info {
 	background-color: var(--nord10-pale);
-	color: var(--nord1);
 	border-color: var(--nord10);
 }
 .callout.info .callout-title {
