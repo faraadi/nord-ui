@@ -1,0 +1,10 @@
+.callout {
+	background-color: var(--nord4);
+    border-left: 2px solid;
+    border-color: var(--nord3);
+	padding: 20px 0 20px var(--callout-side-offset);
+}
+
+.callout-title {
+	font-size: 2em
+}

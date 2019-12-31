@@ -24,4 +24,5 @@
     --default--transition: 0.3s;
 
     --tooltip-offset: 5px;
+    --callout-side-offset: 2em;
 }
