@@ -8,3 +8,27 @@
 .callout-title {
 	font-size: 2em
 }
+
+.callout.primary {
+	background-color: var(--nord);
+	color: var(--nord)
+}
+
+.callout.secondary {
+
+}
+
+.callout.success {
+
+}
+
+.callout.danger {
+
+}
+
+.callout.warning {
+
+}
+.callout.info {
+
+}
