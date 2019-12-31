@@ -4,5 +4,6 @@
 @import './card/card.css';
 @import './card/card.dark.css';
 @import './tooltip/tooltip.css';
+@import './tooltip/tooltip.dark.css';
 @import './colors/colors.css';
 @import './callout/callout.css';
