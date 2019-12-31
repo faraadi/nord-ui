@@ -2,11 +2,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
+const resolveSplittedEntries = require('./splitted-entries.js');
 const path = require('path');
 
 const rootPath = path.resolve(__dirname, "../");
 const srcPath = path.resolve(rootPath, "src");
 const distPath = path.resolve(rootPath, "dist");
+const componentsPath = path.resolve(srcPath, "components");
 
 const singleBundleConfig = {
     mode: "production",
@@ -54,14 +56,7 @@ const splittedBudlesConfig = {
     mode: "production",
     target: 'web',
     devtool: "none",
-    entry: {
-        button: path.resolve(srcPath, "components/button/button.css"),
-        card: path.resolve(srcPath, "components/card/card.css"),
-        grid: path.resolve(srcPath, "components/grid/grid.css"),
-        tooltip: path.resolve(srcPath, "components/tooltip/tooltip.css"),
-        colors: path.resolve(srcPath, "components/colors/colors.css"),
-        base: [path.resolve(srcPath, "variables.css"), path.resolve(srcPath, "default.css")]
-    },
+    entry: resolveSplittedEntries(componentsPath),
     output: {
         path: path.resolve(distPath, "chunks")
     },
