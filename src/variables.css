@@ -2,9 +2,13 @@
     --nord-deep-dark: #242931;
     /*  polar night */
     --nord0: #2E3440;
+    --nord0-pale: rgba(46,52,64);
     --nord1: #3B4252;
+    --nord1-pale: rgba(59,66,82);
     --nord2: #434C5E;
+    --nord2-pale: rgba(67,76,94);
     --nord3: #4C566A;
+    --nord3-pale: rgba(76,86,106);
     /* snow storm */
     --nord4: #D8DEE9;
     --nord5: #E5E9F0;
@@ -16,10 +20,15 @@
     --nord10: #5E81AC;
     /* aurora */
     --nord11: #BF616A;
+    --nord11-pale: rgba(191,97,106);
     --nord12: #D08770;
+    --nord12-pale: rgba(208,135,112);
     --nord13: #EBCB8B;
+    --nord13-pale: rgba(235,203,139);
     --nord14: #A3BE8C;
+    --nord14-pale: rgba(163,190,140);
     --nord15: #B48EAD;
+    --nord15-pale: rgba(180,140,173);
 
     --default--transition: 0.3s;
 
