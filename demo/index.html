@@ -9,7 +9,7 @@
     <title>Nordic-UI</title>
 </head>
 
-<body>
+<body class="dark">
     <div class="row">
         <button class="btn primary theme-toggler">change theme</button>
     </div>
@@ -233,7 +233,6 @@
 
     <script type="text/javascript">
         const themeToggler = document.querySelector(".theme-toggler");
-        console.log(themeToggler)
         themeToggler.onclick = function() {
             document.body.classList.toggle("dark")
         }

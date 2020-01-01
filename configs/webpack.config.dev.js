@@ -31,8 +31,8 @@ const config = {
         ]
     },
     devServer: {
-        contentBase: [demoPath, srcPath],
-        compress: true,
+        contentBase: demoPath,
+        // compress: true,
         port: 3000,
         host: "0.0.0.0",
         clientLogLevel: "silent",

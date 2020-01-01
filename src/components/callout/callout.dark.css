@@ -1,0 +1,9 @@
+.dark .callout:not(.primary):not(.secondary):not(.danger):not(.warning):not(.success):not(.info) {
+	background-color: var(--nord3-pale);
+}
+.dark .callout {
+	color: var(--nord4);
+}
+.dark .callout.secondary .callout-title {
+	color: var(--nord3);
+}
