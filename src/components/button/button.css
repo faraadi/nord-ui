@@ -16,7 +16,7 @@
 
 .btn.primary {
     background-color: var(--nord7);
-    color: var(--nord1);
+    color: var(--nord0);
 }
 .btn.secondary {
     background-color: var(--nord1);
