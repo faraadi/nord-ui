@@ -11,20 +11,14 @@ const config = {
     entry: path.resolve(srcPath, 'index.css'),
     output: {
         path: distPath,
-        filename: 'bundle.css'
+        // filename: 'bundle.css'
     },
     module: {
         rules: [
             {
                 test: /\.css$/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            publicPath: srcPath,
-                            hmr: false,
-                        },
-                    },
+                    'style-loader',
                     'css-loader',
                 ],
             }
@@ -32,7 +26,8 @@ const config = {
     },
     devServer: {
         contentBase: demoPath,
-        // compress: true,
+        publicPath: "/",
+        hot: true,
         port: 3000,
         host: "0.0.0.0",
         clientLogLevel: "silent",
@@ -40,21 +35,14 @@ const config = {
         watchContentBase: true,
         quiet: true,
         overlay: {
-            warnings: false,
+            warnings: true,
             errors: true
         },
-        hot: true
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(demoPath, "index.html")
-        }),
-        new MiniCssExtractPlugin({
-            path: path.resolve(distPath) + "/chunks",
-            filename: '[name].css',
-            chunkFilename: '[id].css',
-            ignoreOrder: false
-        }),
+        })
     ]
 };
 
