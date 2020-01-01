@@ -20,7 +20,7 @@
 }
 .callout.secondary {
 	background-color: var(--nord1-pale);
-	border-color: var(--nord1);
+	border-color: var(--nord3);
 }
 .callout.secondary .callout-title {
 	color: var(--nord1);
@@ -52,4 +52,8 @@
 }
 .callout.info .callout-title {
 	color: var(--nord10);
+}
+
+.callout.minimal {
+	background-color: var(--nord4)
 }

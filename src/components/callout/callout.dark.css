@@ -1,4 +1,4 @@
-.dark .callout:not(.primary):not(.secondary):not(.danger):not(.warning):not(.success):not(.info) {
+.dark .callout:not(.primary):not(.secondary):not(.danger):not(.warning):not(.success):not(.info):not(.minimal) {
 	background-color: var(--nord3-pale);
 }
 .dark .callout {
@@ -6,4 +6,8 @@
 }
 .dark .callout.secondary .callout-title {
 	color: var(--nord3);
+}
+
+.dark .callout.minimal {
+	background-color: var(--nord3-pale)
 }
