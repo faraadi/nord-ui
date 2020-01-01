@@ -1,0 +1,32 @@
+.form-group {
+	position: relative;
+	display: block;
+	margin-bottom: 8px
+}
+input.form-control {
+	padding: 8px;
+	font-size: 1em;
+	outline: none;
+	border: 1px solid var(--nord1-pale);
+	border-radius: 3px;
+	transition: 0.3s;
+	height: unset;
+	font-weight: normal;
+    width: 100%;
+}
+input.form-control:not([readonly]):focus {
+	border-color: var(--nord1);
+}
+input.form-control:disabled {
+	background-color: var(--nord3-pale);
+	cursor: not-allowed;
+}
+input.form-control[readonly] {
+	cursor: default
+}
+.form-label {
+	font-size: 1.1rem;
+	color: var(--nord0);
+	display: block;
+	margin-bottom: 3px
+}
