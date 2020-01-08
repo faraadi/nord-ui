@@ -10,6 +10,7 @@ input.form-control {
 	border: 1px solid var(--nord1-pale);
 	border-radius: 3px;
 	transition: 0.3s;
+	transition-property: border-color, background-color;
 	height: unset;
 	font-weight: normal;
     width: 100%;
