@@ -36,3 +36,40 @@ input.form-control[readonly] {
 	color: var(--nord3);
 	margin-left: 5px
 }
+
+.form-group.primary input.form-control {
+	border-color: var(--nord7);
+}
+.form-group.primary .form-helper {
+	color: var(--nord7)
+}
+.form-group.secondary input.form-control {
+	border-color: var(--nord1);
+}
+.form-group.secondary .form-helper {
+	color: var(--nord1)
+}
+.form-group.success input.form-control {
+	border-color: var(--nord14);
+}
+.form-group.success .form-helper {
+	color: var(--nord14)
+}
+.form-group.danger input.form-control {
+	border-color: var(--nord11);
+}
+.form-group.danger .form-helper {
+	color: var(--nord11)
+}
+.form-group.warning input.form-control {
+	border-color: var(--nord12);
+}
+.form-group.warning .form-helper {
+	color: var(--nord12)
+}
+.form-group.info input.form-control {
+	border-color: var(--nord10);
+}
+.form-group.info .form-helper {
+	color: var(--nord10)
+}
