@@ -1,7 +1,7 @@
 .form-group {
 	position: relative;
 	display: block;
-	margin-bottom: 10px
+	margin-bottom: var(--form-group-bottom-margin);
 }
 input.form-control {
 	padding: 8px;
@@ -29,7 +29,7 @@ input.form-control[readonly] {
 	font-size: 1.1rem;
 	color: var(--nord0);
 	display: block;
-	margin-bottom: 3px
+	margin-bottom: var(--form-label-bottom-margin);
 }
 .form-helper {
 	font-size: 0.8em;

@@ -39,4 +39,6 @@
 
     --tooltip-offset: 5px;
     --callout-side-offset: 2em;
+    --form-group-bottom-margin: 10px;
+    --form-label-bottom-margin: 5px;
 }
