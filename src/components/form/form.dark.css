@@ -7,7 +7,6 @@
 	border-color: var(--nord3);
 }
 .dark input.form-control:not([readonly]):focus {
-	border-color: var(--nord0);
 	background-color: var(--nord3)
 }
 .dark input.form-control:disabled {
