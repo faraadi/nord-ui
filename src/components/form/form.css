@@ -31,3 +31,8 @@ input.form-control[readonly] {
 	display: block;
 	margin-bottom: 3px
 }
+.form-helper {
+	font-size: 0.8em;
+	color: var(--nord3);
+	margin-left: 5px
+}
