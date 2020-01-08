@@ -1,7 +1,7 @@
 .form-group {
 	position: relative;
 	display: block;
-	margin-bottom: 8px
+	margin-bottom: 10px
 }
 input.form-control {
 	padding: 8px;
@@ -16,6 +16,7 @@ input.form-control {
 }
 input.form-control:not([readonly]):focus {
 	border-color: var(--nord1);
+	background-color: var(--nord6-pale)
 }
 input.form-control:disabled {
 	background-color: var(--nord3-pale);
