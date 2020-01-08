@@ -36,7 +36,28 @@ input.form-control[readonly] {
 	color: var(--nord3);
 	margin-left: 5px
 }
-
+.form-group.large input.form-control {
+	padding: 12px;
+	font-size: 1.2em;
+	border-width: 2px;
+}
+.form-group.large .form-label {
+	font-size: 1.2em;
+}
+.form-group.large .form-helper {
+	font-size: 1em;
+}
+.form-group.small input.form-control {
+	padding: 6px;
+	font-size: 0.8em;
+	border-width: 0.5px;
+}
+.form-group.small .form-label {
+	font-size: 0.9em;
+}
+.form-group.small .form-helper {
+	font-size: 0.6em;
+}
 .form-group.primary input.form-control {
 	border-color: var(--nord7);
 }
