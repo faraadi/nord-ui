@@ -11,8 +11,11 @@
     --nord3-pale: rgba(76,86,106, 0.3);
     /* snow storm */
     --nord4: #D8DEE9;
+    --nord4-pale: rgba(216,222,232, 0.3);
     --nord5: #E5E9F0;
+    --nord5-pale: rgba(229,233,240, 0.3);
     --nord6: #ECEFF4;
+    --nord6-pale: rgba(236,239,244, 0.3);
     /* frost */
     --nord7: #8FBCBB;
     --nord7-pale: rgba(143,188,187,0.3);
