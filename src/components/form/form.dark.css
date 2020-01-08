@@ -14,3 +14,6 @@
 	background-color: var(--nord2-pale);
 	border-color: transparent; 
 }
+.dark .form-helper {
+	color: var(--nord6-pale)
+}
