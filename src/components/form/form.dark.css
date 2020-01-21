@@ -1,15 +1,15 @@
 .dark .form-label {
 	color: var(--nord6)
 }
-.dark input.form-control {
+.dark input.form-control, .dark select.form-control {
 	background-color: var(--nord2);
 	color: var(--nord4);
 	border-color: var(--nord3);
 }
-.dark input.form-control:not([readonly]):focus {
+.dark input.form-control:not([readonly]):focus, .dark select.form-control:not([readonly]):focus {
 	background-color: var(--nord3)
 }
-.dark input.form-control:disabled {
+.dark input.form-control:disabled,.dark select.form-control:disabled {
 	background-color: var(--nord2-pale);
 	border-color: transparent; 
 }
