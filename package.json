@@ -2,7 +2,7 @@
   "name": "nordic-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/nordic.min.css",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --config ./configs/webpack.config.dev.js",
