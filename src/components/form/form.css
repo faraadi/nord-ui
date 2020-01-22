@@ -16,6 +16,11 @@ input.form-control, select.form-control {
     width: 100%;
     background-color: transparent;
 }
+select.form-control option {
+	background-color: var(--nord4);
+	font-size: 1em;
+	color: var(--nord0);
+}
 input.form-control:not([readonly]):focus, select.form-control:not([readonly]):focus {
 	border-color: var(--nord1);
 	background-color: var(--nord6-pale)

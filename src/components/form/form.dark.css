@@ -16,3 +16,7 @@
 .dark .form-helper {
 	color: var(--nord6-pale)
 }
+.dark select.form-control option {
+	background-color: var(--nord0);
+	color: var(--nord4);
+}
