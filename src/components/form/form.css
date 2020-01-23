@@ -44,32 +44,26 @@ input.form-control[readonly], select.form-control[readonly] {
 	margin-left: 5px
 }
 /* size classes */
-.form-group.large input.form-control,
-.form-group.large select.form-control,
-input.form-control.large,
-select.form-control.large {
+.form-group.large input.form-control,.form-group.large select.form-control {
 	padding: 12px;
 	font-size: 1.2em;
 	border-width: 2px;
 }
-.form-group.large .form-label, .form-label.large {
+.form-group.large .form-label {
 	font-size: 1.2em;
 }
-.form-group.large .form-helper, .form-helper.large {
+.form-group.large .form-helper{
 	font-size: 1em;
 }
-.form-group.small input.form-control,
-.form-group.small select.form-control,
-input.form-control.small,
-select.form-control.small {
+.form-group.small input.form-control,.form-group.small select.form-control {
 	padding: 6px;
 	font-size: 0.8em;
 	border-width: 0.5px;
 }
-.form-group.small .form-label, .form-label.small {
+.form-group.small .form-label {
 	font-size: 0.9em;
 }
-.form-group.small .form-helper, .form-helper.small {
+.form-group.small .form-helper {
 	font-size: 0.6em;
 }
 /* --- */
