@@ -1,48 +1,46 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const rootPath = path.resolve(__dirname, "../");
 const srcPath = path.resolve(rootPath, "src");
 const distPath = path.resolve(rootPath, "dist");
 const demoPath = path.resolve(rootPath, "demo");
 
 const config = {
-    entry: path.resolve(srcPath, 'index.css'),
+    mode: "development",
+    target: 'web',
+    devtool: "none",
+    entry: {
+        main: path.resolve(srcPath, 'index.css')
+    },
     output: {
-        path: distPath,
-        // filename: 'bundle.css'
+        path: distPath
     },
     module: {
         rules: [
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: srcPath,
+                            hmr: false,
+                        },
+                    },
                     'css-loader',
                 ],
+
             }
         ]
     },
-    devServer: {
-        contentBase: demoPath,
-        publicPath: "/",
-        hot: true,
-        port: 3000,
-        host: "0.0.0.0",
-        clientLogLevel: "silent",
-        historyApiFallback: true,
-        watchContentBase: true,
-        quiet: true,
-        overlay: {
-            warnings: true,
-            errors: true
-        },
-    },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: path.resolve(demoPath, "index.html")
-        })
+        new MiniCssExtractPlugin({
+            filename: 'nordic.min.css',
+            ignoreOrder: false
+        }),
+        new FixStyleOnlyEntriesPlugin(),
     ]
 };
 
