@@ -15,21 +15,20 @@
     display: block;
 }
 
-
 /* gutter classes */
-.row.gutter-8>.col {
+.row.gutter-tiny>.col {
     padding: 8px
 }
 
-.row.gutter-16>.col {
+.row.gutter-medium>.col {
     padding: 16px
 }
 
-.row.gutter-24>.col {
+.row.gutter-large>.col {
     padding: 24px
 }
 
-.row.gutter-36>.col {
+.row.gutter-xlarge>.col {
     padding: 36px
 }
 
@@ -72,10 +71,6 @@
 
 .align-center {
     align-items: center;
-}
-
-.striped {
-    background-color: #eee
 }
 
 
@@ -147,7 +142,6 @@
 }
 
 /* small screen size classes */
-
 @media only screen and (min-width: 600px) {
     .col.sm-auto {
         flex: 1 0 0px;
@@ -205,7 +199,6 @@
 
 
 /* medium screen size classes */
-
 @media only screen and (min-width: 960px) {
     .col.md-auto {
         flex: 1 0 0px;
@@ -263,7 +256,6 @@
 
 
 /* large screen size classes */
-
 @media only screen and (min-width: 1280px) {
     .col.lg-auto {
         flex: 1 0 0px;
@@ -321,7 +313,6 @@
 
 
 /* extra large screen size classes */
-
 @media only screen and (min-width: 1920px) {
     .col.xl-auto {
         flex: 1 0 0px;
