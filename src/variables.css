@@ -41,4 +41,9 @@
     --callout-side-offset: 2em;
     --form-group-bottom-margin: 10px;
     --form-label-bottom-margin: 5px;
+
+    --gutter-tiny: 8px;
+    --gutter-medium: 16px;
+    --gutter-large: 24px;
+    --gutter-xlarge: 36px;
 }

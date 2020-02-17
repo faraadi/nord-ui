@@ -17,19 +17,19 @@
 
 /* gutter classes */
 .row.gutter-tiny>.col {
-    padding: 8px
+    padding: var(--gutter-tiny)
 }
 
 .row.gutter-medium>.col {
-    padding: 16px
+    padding: var(--gutter-medium)
 }
 
 .row.gutter-large>.col {
-    padding: 24px
+    padding: var(--gutter-large)
 }
 
 .row.gutter-xlarge>.col {
-    padding: 36px
+    padding: var(--gutter-xlarge)
 }
 
 
