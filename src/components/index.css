@@ -1,6 +1,6 @@
 @import './dark-theme/dark-theme.css';
 @import './button/button.css';
-@import './grid/grid.css';
+@import './flex/flex.css';
 @import './card/card.css';
 @import './card/card.dark.css';
 @import './tooltip/tooltip.css';
