@@ -5,9 +5,9 @@
 	"version": "1.0.0",
 	"maintainers": [
 		{
-		  "name": "Farhad Sharifi",
-		  "email": "faradidev@gmail.com",
-		  "web": ""
+			"name": "Farhad Sharifi",
+			"email": "faradidev@gmail.com",
+			"web": ""
 		}
 	],
 	"devDependencies": {
@@ -26,6 +26,7 @@
 		"webpack-dev-server": "^3.3.1"
 	},
 	"scripts": {
+		"postinstall": "npm link nordic-ui",
 		"start": "npm run dev",
 		"dev": "webpack-dev-server --config configs/webpack.config.dev.js",
 		"build": "webpack --config configs/webpack.config.prod.js",

@@ -9,7 +9,8 @@ const srcPath = path.resolve(rootPath, "src");
 module.exports = {
     mode: 'development',
     entry: {
-        bundle: path.resolve(srcPath, "index.js")
+        main: path.resolve(srcPath, "index.js"),
+        docs: path.resolve(srcPath, "docs", "index.js")
     },
     resolve: {
         alias: {}
@@ -48,10 +49,19 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(publicPath, "index.html"),
+            template: path.resolve(srcPath, "docs", "index.html"),
+            filename: "docs/index.html",
+            excludeChunks: [ 'main' ],
+            templateParameters: {
+                'PUBLIC_URL': process.env.PUBLIC_URL || "/docs"
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(srcPath, "index.html"),
             templateParameters: {
                 'PUBLIC_URL': process.env.PUBLIC_URL || "/"
-            }
+            },
+            excludeChunks: [ 'docs' ],
         }),
         new DuplicatePackageCheckerPlugin(),
     ],
