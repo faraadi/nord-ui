@@ -1,6 +1,6 @@
 {
   "name": "nord-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Nord UI",
   "description": "A Dark and minimal CSS UI framework, based on nord color palette",
   "main": "dist/nord.min.css",
@@ -10,7 +10,13 @@
     "build": "webpack --config ./configs/webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["nord", "nordic", "ui", "css", "minimal"],
+  "keywords": [
+    "nord",
+    "nordic",
+    "ui",
+    "css",
+    "minimal"
+  ],
   "author": {
     "name": "Farhad Sharifi",
     "email": "faradidev@gmail.com",
