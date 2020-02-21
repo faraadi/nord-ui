@@ -1,8 +1,8 @@
 {
-  "name": "nordic-ui",
+  "name": "nord-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/nordic.min.css",
+  "main": "dist/nord.min.css",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack --watch --info-verbosity verbose --config ./configs/webpack.config.dev.js",

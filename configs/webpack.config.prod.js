@@ -45,7 +45,7 @@ const singleBundleConfig = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'nordic.min.css',
+            filename: 'nord.min.css',
             ignoreOrder: false
         }),
         new FixStyleOnlyEntriesPlugin(),
