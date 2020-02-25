@@ -5,7 +5,8 @@ const srcPath = path.resolve(__dirname, "../", "src");
 
 const components = {};
 const additionalComponents = {
-	base: [path.resolve(srcPath, "variables.css"), path.resolve(srcPath, "default.css")]
+	base: [path.resolve(srcPath, "variables.css"), path.resolve(srcPath, "default.css")],
+	helper: path.resolve(srcPath, "helper.css")
 };
 
 function readPath(p) {
