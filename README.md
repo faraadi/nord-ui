@@ -1,9 +1,13 @@
-<center>
-    <h3>
+<center align='center'>
+    <h3 align='center'>
         Nord UI
     </h3>
-    A Dark and minimal CSS UI framework, based on nord color palette
+    <p align='center'>
+        A Dark and minimal CSS UI framework, based on nord color palette
+    </p>
 </center>
+
+
 
 <hr>
 
@@ -51,7 +55,7 @@ if you're interested in contributing on this package, contact my [email](mailto:
 
 
 
-Code Released under the MIT License.
+Code Released under the [MIT License](https://github.com/faraadi/nord-ui/blob/master/LICENSE).
 
 Copyright 2020 [Farhad Sharifi](https://twitter.com/faradivar).
 
