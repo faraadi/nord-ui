@@ -1,22 +1,22 @@
 {
 	"name": "nord-ui-site",
-	"author": "Farhad Sharifi",
+	"title": "Nord UI Site",
+	"author": {
+		"name": "Farhad Sharifi",
+		"email": "faradidev@gmail.com",
+		"web": ""
+	},
 	"description": "official site and Documentation for Nord-UI",
-	"version": "1.0.0",
-	"maintainers": [
-		{
-			"name": "Farhad Sharifi",
-			"email": "faradidev@gmail.com",
-			"web": ""
-		}
-	],
+	"version": "0.0.1",
 	"devDependencies": {
 		"clean-webpack-plugin": "^3.0.0",
 		"copy-webpack-plugin": "^5.1.1",
 		"css-loader": "^2.1.1",
 		"dotenv-webpack": "^1.7.0",
 		"duplicate-package-checker-webpack-plugin": "^3.0.0",
+		"extract-loader": "^4.0.3",
 		"file-loader": "^5.0.2",
+		"html-loader": "^0.5.5",
 		"html-webpack-plugin": "^3.2.0",
 		"mini-css-extract-plugin": "^0.6.0",
 		"serve": "^11.0.0",
@@ -26,13 +26,13 @@
 		"webpack-dev-server": "^3.3.1"
 	},
 	"scripts": {
-		"postinstall": "npm link nord-ui",
 		"start": "npm run dev",
 		"dev": "webpack-dev-server --config configs/webpack.config.dev.js",
 		"build": "webpack --config configs/webpack.config.prod.js",
 		"serve": "serve -s dist"
 	},
 	"dependencies": {
-		"marked": "^0.8.0"
+		"marked": "^0.8.0",
+		"nord-ui": "0.0.3"
 	}
 }
