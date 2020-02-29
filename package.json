@@ -8,7 +8,9 @@
     "start": "npm run dev",
     "dev": "webpack --watch --info-verbosity verbose --config ./configs/webpack.config.dev.js",
     "build": "webpack --config ./configs/webpack.config.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:site": "cd site && npm run dev",
+    "build:site": "cd site && npm run build",
+    "test": "exit 1"
   },
   "keywords": [
     "nord",
