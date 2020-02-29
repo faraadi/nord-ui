@@ -1,0 +1,46 @@
+header {
+	min-height: 50px;
+	background-color: var(--nord0);
+}
+.leftbar {
+	padding: 15px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	overflow-y: auto;
+	min-width: 300px
+}
+.leftbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+.doc-category-title {
+	color: var(--nord3);
+	font-size: 0.8em
+}
+.doc-category-divider {
+	border-color: var(--nord3);
+	border-style: solid;
+	border-width: 1px
+}
+.leftbar ul li {
+	display: contents;
+}
+.doc-link {
+	display: block;
+	margin-left: 10px;
+	padding: 10px 0;
+	color: var(--nord7);
+	transition:  0.3s;
+}
+.doc-link:hover {
+	color: var(--nord7)
+}
+.doc-link.active {
+	background-color: var(--nord0);
+	border-radius: 3px;
+	padding-left: 10px;
+	margin-left: 0
+}

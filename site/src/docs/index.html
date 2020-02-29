@@ -11,83 +11,61 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<style type="text/css">
-		header {
-			min-height: 50px;
-			background-color: var(--nord0);
-		}
-		.leftbar {
-			padding: 15px;
-		}
-		.leftbar ul {
-			list-style: none;
-			padding: 0;
-			margin: 0 0 10px 0;
-		}
-		.doc-category-title {
-			color: var(--nord3);
-			font-size: 0.8em
-		}
-		.doc-category-divider {
-			border-color: var(--nord3);
-			border-style: solid;
-			border-width: 1px
-		}
-		.leftbar ul li {
-			display: contents;
-		}
-		.doc-link {
-			display: block;
-			margin-left: 10px;
-			padding: 10px 0;
-			color: rgba(143,188,187,0.6);
-			transition:  0.3s;
-		}
-		.doc-link:hover {
-			color: var(--nord7)
-		}
-		.doc-link.active {
-			color: var(--nord7);
-			background-color: var(--nord0);
-			border-radius: 3px;
-			padding-left: 10px;
-		}
-	</style>
 </head>
 <body class="dark">
 	<main>
 		<div class="row">
 			<div class="col sm-2">
 				<aside class="leftbar">
+					<a class="doc-link" href="docs?page=quick-start">Quick Start</a>
 					<ul>
 						<div>
 							<h6 class="doc-category-title">Getting Started</h6>
 							<hr class="doc-category-divider">
 						</div>
-						<li><a class="doc-link" href="docs/installation">Installation</a></li>
-						<li><a class="doc-link" href="docs/usage">Usage</a></li>
+						<li><a class="doc-link" href="docs?page=installation">Installation</a></li>
+						<li><a class="doc-link" href="docs?page=usage">Usage</a></li>
+					</ul>
+					<ul>
+						<div>
+							<h6 class="doc-category-title">Core</h6>
+							<hr class="doc-category-divider">
+						</div>
+						<li><a class="doc-link" href="docs?page=alert">Introduction</a></li>
+						<li><a class="doc-link" href="docs?page=button">Colors</a></li>
+						<li><a class="doc-link" href="docs?page=card">Typography</a></li>
+						<li><a class="doc-link" href="docs?page=card">Variables</a></li>
 					</ul>
 					<ul>
 						<div>
 							<h6 class="doc-category-title">Components</h6>
 							<hr class="doc-category-divider">
 						</div>
-						<li><a class="doc-link" href="docs/alert">Alert</a></li>
-						<li><a class="doc-link" href="docs/button">Button</a></li>
-						<li><a class="doc-link" href="docs/card">Card</a></li>
+						<li><a class="doc-link" href="docs?page=alert">Alert</a></li>
+						<li><a class="doc-link" href="docs?page=button">Button</a></li>
+						<li><a class="doc-link" href="docs?page=card">Card</a></li>
 					</ul>
 					<ul>
 						<div>
 							<h6 class="doc-category-title">Utility</h6>
 							<hr class="doc-category-divider">
 						</div>
-						<li><a class="doc-link" href="docs/dark-theme">Dark Theme</a></li>
-						<li><a class="doc-link" href="docs/helper-classes">Helper Classes</a></li>
+						<li><a class="doc-link" href="docs?page=dark-theme">Dark Theme</a></li>
+						<li><a class="doc-link" href="docs?page=helper-classes">Helper Classes</a></li>
+						<li><a class="doc-link" href="docs?page=helper-classes">Defaults</a></li>
+					</ul>
+					<ul>
+						<div>
+							<h6 class="doc-category-title">Guides</h6>
+							<hr class="doc-category-divider">
+						</div>
+						<li><a class="doc-link" href="docs?page=dark-theme">Code Splitting</a></li>
+						<li><a class="doc-link" href="docs?page=helper-classes">Customization</a></li>
 					</ul>
 				</aside>
 			</div>
 			<div class="col sm-8">
-				<article>
+				<article id="main">
 					main
 				</article>
 			</div>	

@@ -16,7 +16,8 @@ module.exports = {
 	resolve: {
 		alias: {
 			commons: path.resolve(srcPath, "commons"),
-			assets: path.resolve(srcPath, "assets")
+			assets: path.resolve(srcPath, "assets"),
+			modules: path.resolve(srcPath, "modules")
 		}
 	},
 	devServer: {

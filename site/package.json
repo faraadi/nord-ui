@@ -33,6 +33,7 @@
 	},
 	"dependencies": {
 		"marked": "^0.8.0",
-		"nord-ui": "0.0.3"
+		"nord-ui": "0.0.3",
+		"showdown": "^1.9.1"
 	}
 }
