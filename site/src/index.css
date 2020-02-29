@@ -1,0 +1,24 @@
+main {
+	display: flex;
+	align-items: center;
+	height: 100%
+}
+
+.logo-container, .doc-links-container {
+	text-align: center
+}
+
+.logo {
+	max-width: 200px
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 10px
+}
+footer span {
+	font-size: 0.8em
+}

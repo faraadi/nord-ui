@@ -1,6 +1,7 @@
 export default {
 	findPathName(query) {
-		return new URLSearchParams(query).get("page");
+		const pathName = new URLSearchParams(query).get("page");
+		return (pathName === null || pathName === "") ? "index" : pathName;
 	},
 	async getDocumentFile(path) {
 		const response = await fetch(path);

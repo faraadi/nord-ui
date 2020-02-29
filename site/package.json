@@ -32,8 +32,7 @@
 		"serve": "serve -s dist"
 	},
 	"dependencies": {
-		"marked": "^0.8.0",
-		"nord-ui": "0.0.3",
+		"nord-ui": "latest",
 		"showdown": "^1.9.1"
 	}
 }
