@@ -1,8 +1,7 @@
+import markdownConverter from './markdown-converter.js';
 import { utils } from 'modules';
-import { Converter } from 'showdown';
 import docs from 'assets/documents';
-
-const converterInstance = new Converter();
+import { Prism } from 'modules';
 
 export function onDocLinkClick(e) {
 	e.preventDefault();
@@ -20,14 +19,12 @@ export async function renderDoc(docName) {
 		const doc = await utils.getDocumentFile(docs[docName].file);
 		const mainElement = document.querySelector("#main");
 		mainElement.innerHTML = markdownConverter(doc);
-		activeDocLink()
+		activeDocLink();
+		Prism.highlightAll();
 	}
 	else render404();
 }
 
-export function markdownConverter(text) {
-	return converterInstance.makeHtml(text);
-}
 
 export function activeDocLink() {
 	const previousActiveLink = document.querySelector("a.active");
@@ -37,6 +34,7 @@ export function activeDocLink() {
 		if(el.href === window.location.href) el.classList.add("active")
 	});
 }
+
 export function render404() {
 
 }

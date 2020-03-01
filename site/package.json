@@ -33,6 +33,7 @@
 	},
 	"dependencies": {
 		"nord-ui": "latest",
+		"prismjs": "^1.19.0",
 		"showdown": "^1.9.1"
 	}
 }
