@@ -3,9 +3,8 @@ main {
 	align-items: center;
 	height: 100%
 }
-
-.logo-container, .doc-links-container {
-	text-align: center
+p {
+	font-size: 1rem
 }
 
 .logo {
@@ -19,6 +18,13 @@ main {
 }
 .social-link.github {
 	fill: #f5f5f5
+}
+.installation-sample {
+	margin-top: 20px;
+	background-color: var(--nord0);
+	padding: 15px 20px;
+	border-radius: 3px;
+	font-size: 1rem
 }
 footer {
 	position: fixed;
