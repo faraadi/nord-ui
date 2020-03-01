@@ -11,7 +11,15 @@ main {
 .logo {
 	max-width: 200px
 }
-
+.social-link {
+	margin:  15px
+}
+.social-link.npm {
+	fill: #cb3837
+}
+.social-link.github {
+	fill: #f5f5f5
+}
 footer {
 	position: fixed;
 	bottom: 0;
