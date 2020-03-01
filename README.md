@@ -15,7 +15,7 @@
 
 This project is in active development and is not intended to use for production 🚧
 
-check documentations: [https://nord-ui.netlify.com](https://nord-ui.netlify.com)
+check documentations: [https://nordui.netlify.com](https://nordui.netlify.com)
 
 ## installation
 
