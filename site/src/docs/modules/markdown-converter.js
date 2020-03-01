@@ -1,5 +1,28 @@
-import { Converter } from 'showdown';
-const converterInstance = new Converter();
+import showdown from 'showdown';
+
+const classMap = {
+	blockquote: "callout",
+	// code: ""
+}
+
+const bindings = Object.keys(classMap).map(key => ({
+	type: 'output',
+	regex: new RegExp(`<${key}(.*)>`, 'g'),
+	replace: `<${key} class="${classMap[key]}" $1>`
+}));
+
+const otherBindings = [
+{
+	type: 'output',
+	regex: new RegExp(`<code>`, 'g'),
+	replace: `<code class="inline" $1>`
+}
+]
+
+const converterInstance = new showdown.Converter({
+	noHeaderId: false,
+	extensions: [...bindings, ...otherBindings]
+});
 
 function markdownConverter(text) {
 	return converterInstance.makeHtml(text);

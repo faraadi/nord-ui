@@ -1,17 +1,37 @@
+.documentation {
+	padding-left: 40px; 
+	margin-bottom: 200px
+}
+.documentation h1 {
+	font-size: 3rem;
+	color: var(--nord7)
+}
 .documentation li {
 	line-height: 2
 }
+.documentation p {
+	font-size: 1.1rem
+}
 .documentation pre, .documentation p {
-	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 0;
 	line-height: 1.4
 }
 
 .documentation h2,h3,h4 {
 	margin-top: 2rem;
-	/*margin-bottom: 1rem*/
+	margin-bottom: 1rem
 }
 .documentation blockquote {
-	background-color: var(--nord1-pale);
-	padding: 15px;
-	margin: 10px 0 10px 15px
+	margin-left: 0;
+	margin-right: 0; 
+}
+.documentation blockquote > * {
+	margin: 0
+}
+.documentation code.inline {
+	color: var(--nord7);
+	background: var(--nord1);
+	padding: 4px;
+	border-radius: 2px
 }
