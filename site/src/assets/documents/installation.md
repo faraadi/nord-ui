@@ -37,7 +37,7 @@ paste following code in  `<head>`  section of your document, before any other st
 <link href="https://unpkg.com/nord-ui" rel="stylesheet" type="text/css">
 ```
 
-## Starter Template
+## Starter Template {.test}
 
 in case you need a quick start template with CDN links, paste following codes in your `index.html`
 

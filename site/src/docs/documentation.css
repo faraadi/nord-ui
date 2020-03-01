@@ -1,0 +1,17 @@
+.documentation li {
+	line-height: 2
+}
+.documentation pre, .documentation p {
+	margin: 0;
+	line-height: 1.4
+}
+
+.documentation h2,h3,h4 {
+	margin-top: 2rem;
+	/*margin-bottom: 1rem*/
+}
+.documentation blockquote {
+	background-color: var(--nord1-pale);
+	padding: 15px;
+	margin: 10px 0 10px 15px
+}
