@@ -6,7 +6,7 @@
   "main": "dist/nord.min.css",
   "style": "dist/nord.min.css",
   "scripts": {
-    "publish": "npm run build && npm publish",
+    "prepublishOnly": "npm run build",
     "start": "npm run dev",
     "dev": "webpack --watch --info-verbosity verbose --config ./configs/webpack.config.dev.js",
     "build": "webpack --config ./configs/webpack.config.prod.js",
