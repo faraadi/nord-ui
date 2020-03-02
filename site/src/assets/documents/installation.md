@@ -1,21 +1,23 @@
 # Installation
 
-Nord UI is written in css only and no javascript included. so you can integrate it with any javascript framework or library.
+Nord UI is written entirely in css and no component depends on javascript. so it's easy to integrate it in any js application.
 
-based on your development environment, there are two methods to add Nord UI to your project:
+Whether you're building a SPA, an universal app or a static site, you just have to include Nord UI bundle and start making your app.
+
+Based on your development environment, there are two ways to add Nord UI to your project:
 
 - Using Package Managers (preferred)
 - Using CDN Links
 
 > if you're using build tools like `webpack`, `parcel` , `rollup` you probably want to use package version.
 
-also, using package version, enables you to tree shake your bundle and exclude unnecessary parts, but CDN Link will bring whole package to your site.
+Also, using package manager's version, enables you to tree shake your bundle and exclude unnecessary parts, but CDN Link will bring whole package to your site.
 
-both versions are minified and production ready.
+Both versions are minified and production ready.
 
 ## Using Package Managers
 
-make sure you have `node` and `npm` (or `yarn`):
+Make sure you have installed `node` and `npm` (or `yarn`):
 
 ### NPM:
 
@@ -31,7 +33,7 @@ yarn add nord-ui
 
 ## Using CDN Links
 
-paste following code in  `<head>`  section of your document, before any other styles:
+Paste following code in  `<head>`  section of your document, before any other styles:
 
 ```html
 <link href="https://unpkg.com/nord-ui" rel="stylesheet" type="text/css">
@@ -39,10 +41,10 @@ paste following code in  `<head>`  section of your document, before any other st
 
 ## Starter Template
 
-in case you need a quick start template with CDN links, paste following codes in your `index.html`:
+In case you need a quick start template with CDN links, paste following codes in your `index.html`:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">

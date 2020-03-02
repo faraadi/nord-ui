@@ -55,9 +55,13 @@ const Activity = {
 			const button = document.createElement("button");
 			button.className = "copy-btn";
 			button.innerText = "copy";
-			clipboard(button, e => e.target.previousSibling.innerText);
-			el.append(button)
-		})
+			clipboard(button, e => {
+				e.target.innerText = "copied ✔";
+				setTimeout(() => e.target.innerText = "copy", 2000);
+				return e.target.previousSibling.innerText;
+			});
+			el.append(button);
+		});
 	}
 }
 
