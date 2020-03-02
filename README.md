@@ -1,4 +1,5 @@
 <center align='center'>
+	<img src="https://nordui.netlify.com/images/logo-background-dark.svg" alt="Nord UI Logo">
     <h3 align='center'>
         Nord UI
     </h3>
@@ -7,11 +8,7 @@
     </p>
 </center>
 
-
-
 <hr>
-
-
 
 This project is in active development and is not intended to use for production 🚧
 
