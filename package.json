@@ -4,6 +4,7 @@
   "title": "Nord UI",
   "description": "A Dark and minimal CSS UI framework, based on nord color palette",
   "main": "dist/nord.min.css",
+  "style": "dist/nord.min.css",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack --watch --info-verbosity verbose --config ./configs/webpack.config.dev.js",
@@ -17,6 +18,9 @@
     "nordic",
     "ui",
     "css",
+    "dark",
+    "web",
+    "framework",
     "minimal"
   ],
   "author": {
@@ -24,9 +28,16 @@
     "email": "faradidev@gmail.com",
     "web": ""
   },
+  "contributors": [
+    "Farhad Sharifi"
+  ],
+  "homepage": "https://nordui.netlify.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/faraadi/nord-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/faraadi/nord-ui/issues"
   },
   "license": "MIT",
   "devDependencies": {
