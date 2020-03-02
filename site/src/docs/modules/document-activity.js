@@ -1,4 +1,5 @@
 import { markdownConverter, Prism } from './index.js';
+import {clipboard } from 'modules';
 import docs from 'assets/documents';
 
 const Activity = {
@@ -27,6 +28,7 @@ const Activity = {
 			mainElement.innerHTML = markdownConverter(doc);
 			Activity.activateDocLink();
 			Prism.highlightAll();
+			Activity.addCopyButton();
 		}
 		else render404();
 	},
@@ -47,6 +49,15 @@ const Activity = {
 	findPathName(query) {
 		const pathName = new URLSearchParams(query).get("page");
 		return (pathName === null || pathName === "") ? "index" : pathName;
+	},
+	addCopyButton() {
+		document.querySelectorAll("pre[class*='language-']").forEach(function(el) {
+			const button = document.createElement("button");
+			button.className = "copy-btn";
+			button.innerText = "copy";
+			clipboard(button, e => e.target.previousSibling.innerText);
+			el.append(button)
+		})
 	}
 }
 

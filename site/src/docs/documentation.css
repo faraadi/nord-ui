@@ -29,9 +29,29 @@
 .documentation blockquote > * {
 	margin: 0
 }
+.documentation pre[class*="language-"] {
+	position: relative;
+}
+
 .documentation code.inline {
 	color: var(--nord7);
 	background: var(--nord1);
 	padding: 4px;
 	border-radius: 2px
+}
+.documentation .copy-btn {
+	background-color: transparent;
+	color: var(--nord4);
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.documentation .copy-btn:active {
+	background: var(--nord3);
 }
