@@ -6,6 +6,9 @@
 	font-size: 3rem;
 	color: var(--nord7)
 }
+.documentation h2 {
+	font-size: 2rem;
+}
 .documentation li {
 	line-height: 2
 }
@@ -52,6 +55,6 @@
     top: 10px;
     right: 10px;
 }
-.documentation .copy-btn:active {
+.documentation .copy-btn:hover {
 	background: var(--nord3);
 }
