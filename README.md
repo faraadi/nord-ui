@@ -1,5 +1,9 @@
 <center align='center'>
-	<img align="center" src="https://nordui.netlify.com/images/logo-background-dark.svg" alt="Nord UI Logo">
+	<p align='center'>
+		<a href='https://nordui.netlify.com' align='center'>
+			<img align="center" src="https://nordui.netlify.com/images/logo-background-dark.svg" alt="Nord UI Logo">
+		</a>
+	</p>
     <h3 align='center'>
         Nord UI
     </h3>
