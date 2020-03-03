@@ -29,6 +29,7 @@ const Activity = {
 			Activity.activateDocLink();
 			Prism.highlightAll();
 			Activity.addCopyButton();
+			Activity.generateOutlines();
 		}
 		else render404();
 	},
@@ -62,6 +63,31 @@ const Activity = {
 			});
 			el.append(button);
 		});
+	},
+	generateOutlines() {
+		const headings = document.querySelectorAll(".documentation>h2, .documentation>h3, .documentation>h4");
+		if(headings) {
+			const outlineContainer = document.createElement("div");
+			outlineContainer.className = "outline-container";
+
+			const outlineList = document.createElement("ul");
+			outlineList.className = "outline-list";
+
+			for(let heading of headings) {
+				const outline = document.createElement("a");
+				outline.className = "outline-link " +  String(heading.nodeName).toLowerCase();
+				outline.innerText = heading.innerText;
+				outline.href = window.location.href + "#" + heading.id;
+				const li = document.createElement("li");
+				li.append(outline);
+				outlineList.append(li);
+			}
+			outlineContainer.append(outlineList);
+			const rightbar = document.querySelector(".rightbar");
+			if(rightbar.childElementCount) rightbar.removeChild(rightbar.children[0]);
+			rightbar.style.width = rightbar.parentNode.clientWidth + "px";
+			rightbar.append(outlineContainer);
+		}
 	}
 }
 

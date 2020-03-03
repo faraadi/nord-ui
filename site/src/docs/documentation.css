@@ -1,5 +1,5 @@
 .documentation {
-	padding-left: 40px; 
+	padding: 0 30px; 
 	margin-bottom: 200px
 }
 .documentation h1 {
@@ -8,6 +8,9 @@
 }
 .documentation h2 {
 	font-size: 2rem;
+}
+.documentation h3 {
+	font-size: 1.4rem
 }
 .documentation li {
 	line-height: 2
