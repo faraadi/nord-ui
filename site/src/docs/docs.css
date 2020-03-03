@@ -45,6 +45,9 @@ header {
 	margin-left: 5px
 }
 .rightbar {
+	position: relative;
+}
+.outline-container {
 	position: fixed;
 	right: 0;
 	top: 20px;
@@ -75,4 +78,9 @@ header {
 }
 .outline-link.h4 {
 
+}
+.doc-edit-link {
+	position: fixed;
+	bottom: 20px;
+	border-bottom: 1px dotted var(--nord7);
 }

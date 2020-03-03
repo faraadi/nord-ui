@@ -1,6 +1,9 @@
 .documentation {
-	padding: 0 30px; 
+	padding: 20px 30px 0 30px;
 	margin-bottom: 200px
+}
+.documentation h1:first-child {
+	margin-top: 0
 }
 .documentation h1 {
 	font-size: 3rem;
