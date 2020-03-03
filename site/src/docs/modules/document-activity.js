@@ -9,8 +9,10 @@ const Activity = {
 
 	init() {
 		const links = document.querySelectorAll(".doc-link");
-		if(links) links.forEach( link => link.onclick = Activity.onLinkClick);
-
+		if(links) {
+			links.forEach( link => link.onclick = Activity.onLinkClick);
+			Activity.docLinks = links;
+		}
 		const query = Activity.findPathName(window.location.search);
 		Activity.getDocument(query);
 	},
@@ -23,19 +25,22 @@ const Activity = {
 	},
 
 	getDocument(docName) {
-		Activity.renderDoc(docName in docs ? docName : false);
+		Activity.renderDoc(docName in docs ? docName : undefined);
 	},
 
 	async renderDoc(docName) {
 		if(docName) {
-			const doc = await Activity.getDocumentFile(docs[docName].file);
+			const docFile = await Activity.getDocumentFile(docs[docName].file);
 			const mainElement = document.querySelector("#main");
-			mainElement.innerHTML = markdownConverter(doc);
+			mainElement.innerHTML = markdownConverter(docFile);
 			Activity.activateDocLink();
-			Prism.highlightAll();
-			Activity.addCopyButton();
+			window.requestIdleCallback(Prism.highlightAll)
+			// Prism.highlightAll();
+			window.requestIdleCallback(Activity.addCopyButton);
+			// Activity.addCopyButton();
+			window.requestIdleCallback(Activity.generateOutlines);
 			Activity.generateOutlines();
-			Activity.generateEditButton(docs[docName].gitPath, mainElement);
+			Activity.updateDocEditLink(docs[docName].gitPath);
 		}
 		else render404();
 	},
@@ -102,12 +107,9 @@ const Activity = {
 		}
 	},
 
-	generateEditButton(gitPath, target) {
+	updateDocEditLink(gitPath, target) {
 		const link = document.querySelector(".doc-edit-link");
-		// link.innerText = 'Edit This Page'
 		link.href = gitPath;
-		// link.className = 
-		// target.prepend(link);
 	}
 }
 
