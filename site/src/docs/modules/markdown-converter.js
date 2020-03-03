@@ -22,7 +22,8 @@ const otherBindings = [
 
 const converterInstance = new showdown.Converter({
 	noHeaderId: false,
-	extensions: [...bindings, ...otherBindings]
+	extensions: [...bindings, ...otherBindings],
+	emoji: true
 });
 
 function markdownConverter(text) {
