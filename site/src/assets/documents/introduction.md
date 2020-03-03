@@ -1,7 +1,8 @@
 # Introduction
 
-Nord UI is a free and open-source CSS UI Framework, based on Nord color palette. using CSS features like Flexbox and Custom properties, Nord UI make it easy to build user interfaces for modern browsers.
+Nord UI is a free and open-source CSS UI Framework, based on Nord color palette.
 
+Using CSS features like Flexbox and Custom properties, Nord UI make it easy to build user interfaces for modern browsers.
 it's lightweight and has minimum impact on your bundle size.
 
 ## Features
