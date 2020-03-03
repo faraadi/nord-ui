@@ -16,13 +16,13 @@ Both versions are minified and production ready.
 
 Make sure you have installed `node` and `npm` (or `yarn`):
 
-### NPM:
+### NPM
 
 ```bash
 npm install nord-ui
 ```
 
-### Yarn:
+### Yarn
 
 ```bash
 yarn add nord-ui

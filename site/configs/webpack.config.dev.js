@@ -9,9 +9,9 @@ const srcPath = path.resolve(rootPath, "src");
 module.exports = {
 	mode: 'development',
 	entry: {
+		commons: path.resolve(srcPath, "commons/index.js"),
 		main: path.resolve(srcPath, "index.js"),
-		docs: path.resolve(srcPath, "docs/index.js"),
-		commons: path.resolve(srcPath, "commons/index.js")
+		docs: path.resolve(srcPath, "docs/index.js")
 	},
 	resolve: {
 		alias: {
@@ -57,14 +57,14 @@ module.exports = {
 	plugins: [
 	new HtmlWebpackPlugin({
 		template: path.resolve(rootPath, 'src', "index.html"),
-		chunks: ["main", "commons"],
+		chunks: ["commons", "main"],
 		templateParameters: {
 			'PUBLIC_URL': process.env.PUBLIC_URL || "/"
 		}
 	}),
 	new HtmlWebpackPlugin({
 		template: path.resolve(rootPath, 'src', "docs/index.html"),
-		chunks: ["docs", "commons"],
+		chunks: ["commons", "docs"],
 		templateParameters: {
 			'PUBLIC_URL': process.env.PUBLIC_URL || "docs"
 		},

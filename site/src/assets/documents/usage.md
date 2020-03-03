@@ -26,7 +26,7 @@ Make [Viewport](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport
 
 If you've installed Nord UI using NPM or Yarn, it'll provide you with two way of importing it's component.
 
-###  1. import entire package
+### import entire package
 
 Import all components, helpers, dark theme and variables together. you just need a single import in your javascript:
 
@@ -48,7 +48,7 @@ Both will import `nord.min.css` file, placed at `nord_modules/nord-ui`.
 
 Now you can head to next section and start building.
 
-### 2. import components and assets individually
+### import components and assets individually
 
 Second, and way better, import components and tools individually. this is useful for production mode, since you'll make sure that only used components will included in your bundle and prevent from extra bytes each time users visits your site.
 

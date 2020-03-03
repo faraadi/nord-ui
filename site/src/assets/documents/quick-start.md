@@ -2,7 +2,7 @@
 
 ## Installation
 
-### Package Manager:
+### Package Manager
 
 ```bash
 npm install nord-ui
@@ -10,12 +10,12 @@ npm install nord-ui
 yarn add nord-ui
 ```
 
-### CDN:
+### CDN
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/nord-ui">
 ```
-### Starter Template:
+### Starter Template
 
 ```html
 <!doctype html>
