@@ -4,6 +4,7 @@ Based on your development environment, there are two ways to add Nord UI to your
 
 - Using Package Managers (preferred)
 - Using CDN Links
+- Starter Template
 
 > if you're using build tools like `webpack`, `parcel` , `rollup` you probably want to use package version.
 
