@@ -1,9 +1,5 @@
 # Installation
 
-Nord UI is written entirely in css and no component depends on javascript. so it's easy to integrate it in any js application.
-
-Whether you're building a SPA, an universal app or a static site, you just have to include Nord UI bundle and start making your app.
-
 Based on your development environment, there are two ways to add Nord UI to your project:
 
 - Using Package Managers (preferred)
@@ -11,7 +7,7 @@ Based on your development environment, there are two ways to add Nord UI to your
 
 > if you're using build tools like `webpack`, `parcel` , `rollup` you probably want to use package version.
 
-Also, using package manager's version, enables you to tree shake your bundle and exclude unnecessary parts, but CDN Link will bring whole package to your site.
+Also, using package manager's version, enables you to tree shake your bundle and exclude unnecessary parts, but CDN Link will bring entire package to your site.
 
 Both versions are minified and production ready.
 
