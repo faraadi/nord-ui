@@ -12,7 +12,7 @@ it's lightweight and has minimum impact on your bundle size.
 - Easy Customization
 - Javascript free
 
-since it's written entirely in css and no component depends on javascript. so it's easy to integrate it in any js application.
+since it's written entirely in css and no component depends on javascript it's easy to integrate it in any js application.
 
 Whether you're building a SPA, an universal app or a static site, you just have to import Nord UI bundle and start making your app.
 
@@ -22,5 +22,5 @@ Whether you're building a SPA, an universal app or a static site, you just have 
 
 Nord UI is built for modern web apps and tries to keep code base small and easily customizable. to achieve this goal, it makes heavy use of Modern CSS features like Flexbox and Custom properties. therefore, old browsers (like IE 11) are not supported at all and most components fail to display properly on them.
 
-So if you're going to add Nord UI to your project, you may consider [Caniuse]() browser compatibility report for minimum support:
+So if you're going to add Nord UI to your project, you may consider [Caniuse]() browser support statistics for minimum support:
 
