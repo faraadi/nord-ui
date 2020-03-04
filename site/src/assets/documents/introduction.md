@@ -3,17 +3,17 @@
 Nord UI is a free and open-source CSS UI Framework, based on Nord color palette.
 
 Using CSS features like Flexbox and Custom properties, Nord UI make it easy to build user interfaces for modern browsers.
-it's lightweight and has minimum impact on your bundle size.
+it's lightweight and has minimum impact on your bundle size, see [here](https://bundlephobia.com/result?p=nord-ui).
 
 ## Features
 
-- Built-in Dark Theme :waxing_crescent_moon:
+- Built-in Dark Theme :waxing_crescent_moon: with support for Light Theme ☀️
 - Lightweight and Modular
 - Built for Modern Browsers
 - Easy Customization
 - Javascript free
 
-since it's written entirely in css and no component depends on javascript it's easy to integrate it in any js application.
+Since it's written entirely in css and no component depends on javascript it's easy to integrate it in any js application.
 
 Whether you're building a SPA, an universal app or a static site, you just have to import Nord UI bundle and start making your app.
 
