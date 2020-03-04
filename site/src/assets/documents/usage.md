@@ -44,8 +44,6 @@ or html:
 
 > Replace `path` with path to the directory that Nord UI files exists.
 
-Both will import `nord.min.css` file, placed at `nord_modules/nord-ui`.
-
 Now you can head to next section and start building.
 
 ### import components and assets individually

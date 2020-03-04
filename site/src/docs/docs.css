@@ -1,12 +1,44 @@
 header {
-	min-height: 50px;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%; 
 	background-color: var(--nord0);
+}
+header > div {
+	height: 100%
+}
+header .logo {
+	max-width: 2em;
+	padding: 5px;
+}
+main, .leftbar, .outline-container {
+	margin-top: 60px
+}
+header .nav-container {
+	list-style: none;
+	display: inline-block;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+header .nav-container li {
+	float: left
+}
+header .nav-container a {
+	color: white;
+	padding: 5px 10px
+}
+header .header-link {
+	padding: 0 10px;
+	width: 35px
 }
 .leftbar {
 	padding: 15px;
 	position: fixed;
 	left: 0;
 	top: 0;
+	margin-top: 50px;
 	bottom: 0;
 	overflow-y: auto;
 	min-width: 300px
@@ -50,7 +82,7 @@ header {
 .outline-container {
 	position: fixed;
 	right: 0;
-	top: 20px;
+	top: 0;
 	padding-right: 15px
 }
 .outline-list {
