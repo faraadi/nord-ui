@@ -67,9 +67,6 @@ header .header-link {
 	color: var(--nord7);
 	transition:  0.3s;
 }
-.doc-link:hover {
-	color: var(--nord7)
-}
 .doc-link.active {
 	background-color: var(--nord0);
 	border-radius: 3px;
@@ -105,7 +102,6 @@ header .header-link {
 	padding-right: 0
 }
 .outline-link.h3 {
-	/*padding-right: 10px: */
 	padding-left: 15px;
 }
 .outline-link.h4 {
@@ -115,4 +111,21 @@ header .header-link {
 	position: fixed;
 	bottom: 20px;
 	border-bottom: 1px dotted var(--nord7);
+}
+
+body:not(.dark) {
+	color: var(--nord1)
+}
+body:not(.dark) header {
+	background-color: var(--nord3)
+}
+body:not(.dark) .outline-link, body:not(.dark) .doc-edit-link {
+	color: var(--nord3)
+}
+body:not(.dark) .doc-link {
+	color: var(--nord3)
+}
+body:not(.dark) .doc-link.active {
+	background-color: var(--nord7-pale);
+	color: var(--nord1)
 }
