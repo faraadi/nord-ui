@@ -44,6 +44,11 @@
     font-size: 1em;
 }
 
+.btn.block {
+    display: block;
+    width: 100%;
+}
+
 .btn:hover, .btn.hover {
     filter: brightness(0.9);
 }
