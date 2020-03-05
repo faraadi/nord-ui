@@ -7,7 +7,7 @@ it's lightweight and has minimum impact on your bundle size, see [here](https://
 
 ## Features
 
-- Built-in Dark Theme :waxing_crescent_moon: with support for Light Theme ☀️
+- Built-in Dark Theme :waxing_crescent_moon:
 - Lightweight and Modular
 - Built for Modern Browsers
 - Easy Customization
