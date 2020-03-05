@@ -57,6 +57,24 @@ There are 6 color variants for buttons.
 	</div>
 </div>
 
+## Block Button
+
+<div class="code-example">
+	<div class="preview">
+		<button class="btn primary block">Full Width Block Button</button>
+		<button class="btn secondary block">Full Width Block Button</button>
+		<button class="btn danger block">Full Width Block Button</button>
+	</div>
+	<div class="source">
+```html
+<button class="btn primary block">Full Width Block Button</button>
+<button class="btn secondary block">Full Width Block Button</button>
+<button class="btn danger block">Full Width Block Button</button>
+```
+	</div>
+</div>
+
+
 ## Anchor Buttons
 Buttons also can be created using `<a>` tags to navigate users around. add `btn` modifier to the tag classes.
 
