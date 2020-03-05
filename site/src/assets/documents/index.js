@@ -3,6 +3,7 @@ import QuickStartDoc from './quick-start.md';
 import IntroductionDoc from './introduction.md';
 import InstallationDoc from './installation.md';
 import UsageDoc from './usage.md';
+import ButtonDoc from './button.md';
 
 export default {
 	"index" : {
@@ -29,5 +30,10 @@ export default {
 		path: "/usage",
 		file: UsageDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/usage.md"
+	},
+	"button": {
+		path: "/button",
+		file: ButtonDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/button.md"
 	}
 }
