@@ -49,7 +49,8 @@
 	color: var(--nord7);
 	background: var(--nord1);
 	padding: 4px;
-	border-radius: 2px
+	border-radius: 2px;
+	font-size: 1em
 }
 .documentation .copy-btn {
 	background-color: transparent;
@@ -86,4 +87,6 @@
 	margin: 0;
 	border-radius: 0
 }
-
+body:not(.dark) .documentation code.inline {
+	background-color: var(--nord3)
+}
