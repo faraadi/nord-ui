@@ -6,3 +6,19 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top: 1em;
 	margin-bottom: 1em
 }
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--nord5);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--nord3);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--nord1);
+}
+::-webkit-scrollbar-button {
+	display: none
+}
