@@ -41,9 +41,6 @@
 .documentation blockquote > * {
 	margin: 0
 }
-.documentation pre[class*="language-"] {
-	position: relative;
-}
 
 .documentation code.inline {
 	color: var(--nord7);
@@ -82,6 +79,10 @@
 .documentation .preview {
 	border-bottom: 0;
 	padding: 1em;
+}
+.documentation .source  {
+	width: 100%;
+	position: relative;
 }
 .documentation .source > pre {
 	margin: 0;
