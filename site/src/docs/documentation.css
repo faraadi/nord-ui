@@ -49,6 +49,9 @@
 	border-radius: 2px;
 	font-size: 1em
 }
+.documentation pre[class*='language-'] {
+	position: relative;
+}
 .documentation .copy-btn {
 	background-color: transparent;
 	color: var(--nord4);
@@ -80,11 +83,15 @@
 	border-bottom: 0;
 	padding: 1em;
 }
-.documentation .source  {
+.documentation .source {
+	width: 100%;
+}
+.documentation .source {
 	width: 100%;
 	position: relative;
 }
 .documentation .source > pre {
+	position: static;
 	margin: 0;
 	border-radius: 0
 }
