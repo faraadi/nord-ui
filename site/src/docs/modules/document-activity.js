@@ -131,7 +131,6 @@ const Activity = {
 }
 
 function render404() {
-
 }
 
 export default Activity;

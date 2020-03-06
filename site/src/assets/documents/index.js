@@ -4,6 +4,7 @@ import IntroductionDoc from './introduction.md';
 import InstallationDoc from './installation.md';
 import UsageDoc from './usage.md';
 import ButtonDoc from './button.md';
+import CardDoc from './card.md';
 
 export default {
 	"index" : {
@@ -35,5 +36,10 @@ export default {
 		path: "/button",
 		file: ButtonDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/button.md"
+	},
+	"card": {
+		path: '/card',
+		file: CardDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/card.md"
 	}
 }
