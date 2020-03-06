@@ -1,6 +1,6 @@
 {
   "name": "nord-ui",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "title": "Nord UI",
   "description": "A Dark and minimal CSS UI framework, based on nord color palette",
   "main": "dist/nord.min.css",
