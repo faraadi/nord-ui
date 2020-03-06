@@ -14,6 +14,6 @@
     padding: 15px;
 }
 
-.card-thumb img {
+.card-thumb img, .card-thumb {
 	border-radius: 4px 4px 0 0 ;
 }
