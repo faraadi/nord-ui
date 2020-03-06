@@ -30,7 +30,7 @@ const Activity = {
 			const docFile = await Activity.getDocumentFile(docs[docName].file);
 			if(docFile) return Activity.renderDoc(docName, docFile);
 		}
-		renderDoc(undefined, undefined);
+		Activity.renderDoc(undefined, undefined);
 	},
 
 	renderDoc(docName, docFile) {
