@@ -18,6 +18,11 @@ import CollapseScript from './js/collapse.script.js';
 import FormDoc from './form.md';
 import ModalDoc from './modal.md';
 import TooltipDoc from './tooltip.md';
+import DarkThemeDoc from './dark-theme.md';
+import HelperClassesDoc from './helper-classes.md';
+import DefaultsDoc from './defaults.md';
+import RightToLeftDoc from './right-to-left.md';
+import CustomizationDoc from './customization.md';
 
 export default {
 	"index" : {
@@ -115,5 +120,30 @@ export default {
 		path: "/tooltip",
 		file: TooltipDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/tooltip.md"
-	}
-}
+	},
+	"dark-theme": {
+		path: "/dark-theme",
+		file: DarkThemeDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/dark-theme.md"
+	},
+	"helper-classes": {
+		path: "/helper-classes",
+		file: HelperClassesDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/helper-classes.md"
+	},
+	"defaults": {
+		path: "/defaults",
+		file: DefaultsDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/defaults.md"
+	},
+	"right-to-left": {
+		path: "/right-to-left",
+		file: RightToLeftDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/right-to-left.md"
+	},
+	"customization": {
+		path: "/customization",
+		file: CustomizationDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/customization.md"
+	},
+};
