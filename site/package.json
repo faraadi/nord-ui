@@ -7,7 +7,7 @@
 		"web": ""
 	},
 	"description": "official site and Documentation for Nord-UI",
-	"version": "0.6.0",
+	"version": "0.6.1",
 	"devDependencies": {
 		"clean-webpack-plugin": "^3.0.0",
 		"copy-webpack-plugin": "^5.1.1",
