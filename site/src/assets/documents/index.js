@@ -54,12 +54,12 @@ export default {
 		path: "/typography",
 		file: TypographyDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/typography.md"	
-	}
+	},
 	"variables": {
 		path: "/variables",
 		file: VariablesDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/variables.md"	
-	}
+	},
 	"flex": {
 		path: "/flex",
 		file: FlexDoc,
@@ -79,7 +79,7 @@ export default {
 		path: "/gutter",
 		file: GutterDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/gutter.md"	
-	}
+	},
 	"button": {
 		path: "/button",
 		file: ButtonDoc,
@@ -98,7 +98,7 @@ export default {
 	"collapse": {
 		path: "/collapse",
 		file: CollapseDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/collapse.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/collapse.md",
 		scripts: [CollapseScript]
 	},
 	"form": {
