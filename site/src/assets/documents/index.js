@@ -5,6 +5,8 @@ import InstallationDoc from './installation.md';
 import UsageDoc from './usage.md';
 import ButtonDoc from './button.md';
 import CardDoc from './card.md';
+import CollapseDoc from './collapse.md';
+import CollapseScript from './js/collapse.script.js';
 
 export default {
 	"index" : {
@@ -41,5 +43,11 @@ export default {
 		path: '/card',
 		file: CardDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/card.md"
+	},
+	"collapse": {
+		path: "/collapse",
+		file: CollapseDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/collapse.md",
+		scripts: [CollapseScript]
 	}
 }

@@ -34,6 +34,7 @@ const Activity = {
 	},
 
 	renderDoc(docName, docFile) {
+		Activity.renderPreProcess();
 		if(docFile) {
 			const mainElement = document.querySelector("#main");
 			mainElement.innerHTML = markdownConverter(docFile);
@@ -44,11 +45,16 @@ const Activity = {
 
 	renderPostProcess(docName) {
 		Activity.activateDocLink();
+		window.requestIdleCallback(() => Activity.loadDocumentScripts(docName));
 		window.requestIdleCallback(Prism.highlightAll);
 		window.requestIdleCallback(Activity.addCopyButton);
 		window.requestIdleCallback(Activity.generateOutlines);
-		window.requestIdleCallback(Activity.generateOutlines);
 		Activity.updateDocEditLink(docs[docName].gitPath);
+	},
+
+	renderPreProcess() {
+		const temporaryScriptsContainer = document.querySelector(".temporary-scripts-container");
+		for(let child of temporaryScriptsContainer.children) child.remove();	
 	},
 
 	activateDocLink() {
@@ -126,6 +132,19 @@ const Activity = {
 			? themeToggleButton.innerHTML = darkIcon
 			: themeToggleButton.innerHTML = lightIcon;
 			document.body.classList.toggle("dark");
+		}
+	},
+
+	loadDocumentScripts(docName) {
+		const {scripts} = docs[docName];
+		if(scripts) {
+			const temporaryScriptsContainer = document.querySelector(".temporary-scripts-container");
+			for(let scriptPath of scripts) {
+				const script = document.createElement("script");
+				script.src = scriptPath;
+				script.type = "text/javascript";
+				temporaryScriptsContainer.append(script);
+			}
 		}
 	}
 }

@@ -39,11 +39,7 @@ module.exports = {
 	module: {
 		rules: [
 		{
-			test: /\.css$/,
-			use: [MiniCssExtractPlugin.loader, 'css-loader']
-		},
-		{
-			test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf|md)$/,
+			test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf|md|script.js)$/,
 			loader: 'file-loader',
 			options: {
 				esModule: false,
@@ -57,10 +53,17 @@ module.exports = {
 					else if(fileName.match(/\.(md)$/)) {
 						return 'docs/[name].[ext]';
 					}
+					else if(fileName.match(/\.(script.js)$/)) {
+						return 'scripts/[name].[ext]';
+					}
 					return '[path][name].[ext]';
 				},
 			},
-		}
+		},
+		{
+			test: /\.css$/,
+			use: [MiniCssExtractPlugin.loader, 'css-loader']
+		},
 		]
 	},
 	plugins: [
