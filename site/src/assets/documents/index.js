@@ -18,9 +18,9 @@ import CollapseScript from './js/collapse.script.js';
 import FormDoc from './form.md';
 import ModalDoc from './modal.md';
 import TooltipDoc from './tooltip.md';
-import DarkThemeDoc from './dark-theme.md';
 import HelperClassesDoc from './helper-classes.md';
 import DefaultsDoc from './defaults.md';
+import DarkThemeDoc from './dark-theme.md';
 import RightToLeftDoc from './right-to-left.md';
 import CustomizationDoc from './customization.md';
 

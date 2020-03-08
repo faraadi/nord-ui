@@ -8,14 +8,14 @@ Import following style(s) to include button styles in your app.
 - Base: `nord-ui/lib/collapse.css`
 - Dark Theme: `none`
 
-## Implementaion Note
+## Implementaion
 generaly, `collapse`'s implementaion require Javascript functionality. since Nord UI comes with no Javascript, you need to handle this on your own.
 
 But still there's another way to create `collapse` with Nord UI in plain html you may consider.
 
 So, whether you're using Javascript to create this component, or not, here's the solutions:
 
-## Using Javascript
+### Using Javascript
 The `collapse` component will consists three elements:
 - a `<div class='collapse'>` that wraps other elements
 - an element with `.collapse-label` class that could have any tag name
@@ -54,7 +54,7 @@ See example below:
 	</div>
 </div>
 
-## Using Plain HTML
+### Using Plain HTML
 It is possible to use `collapse` without Javascript, using a `checkbox`.
 Our `collapse` will consists four parts:
 - a `<div class='collapse'>` that wraps other elements.

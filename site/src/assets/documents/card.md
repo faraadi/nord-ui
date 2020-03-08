@@ -2,7 +2,7 @@
 
 A card is an excellent way to display contents over screen.
 
-## import path
+## Import Path
 Import following style(s) to include `card` styles in your app.
 
 - Base: `nord-ui/lib/card.css`
@@ -43,7 +43,7 @@ You may want to wrap your content inside another `<div>` with `.card-body` class
 > Toggle theme to see different styles
 
 ## Minimal Style
-By default, `card` comes with `box-shadow` style. if you prefer more flat style, add `.minimal` modifier class to your card (not `.card-body`).
+By default, `card` comes with `box-shadow`. if you prefer more flat style, add `.minimal` modifier class to `<div class='card'>`.
 
 <div class='code-example'>
 	<div class='preview'>
@@ -83,7 +83,7 @@ By default, `card` comes with `box-shadow` style. if you prefer more flat style,
 </div>
 
 ## Card with thumbnail
-As you probably noticed, `.card-body` will put a small padding around your images. also, if you are going to use that `<img/>` as thumbnail, top border's raduis are not applied.
+As you probably noticed, `.card-body` will put a small padding around your images. also, if you are going to use that `<img/>` as thumbnail, top border's radius are not applied.
 
 To make your `card`'s thumbnail more compatible, move it outside of `<div class='card-body'>`. then place it into an element with `.card-thumb` class or just add `.card-thumb` to `<img/>`'s class list.
 

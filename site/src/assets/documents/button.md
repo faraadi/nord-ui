@@ -7,7 +7,9 @@ Nord UI buttons can be created in three ways:
 - `<button class='btn'></button>`
 - `<a class='btn'></a>`
 - `<input class='btn' type="submit">` or `<input class='btn' type="reset">`
-## import path
+
+## Import Path
+
 Import following style(s) to include button styles in your app.
 
 - Base: `nord-ui/lib/button.css`
@@ -80,7 +82,7 @@ Buttons also can be created using `<a>` tags to navigate users around. add `btn`
 
 <div class='code-example'>
 	<div class='preview'>
-		<a href="https://somewhere.com" class='btn info'>Link</a>
+		<a href="https://somewhere.com" class='btn info' style="color: var(--nord4)">Link</a>
 	</div>
 	<div class='source'>
 ```html
