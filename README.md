@@ -8,7 +8,7 @@
         Nord UI
     </h3>
     <p align='center'>
-        A Dark and minimal CSS UI framework, based on nord color palette
+        A Dark CSS UI framework, based on nord color palette
     </p>
 </center>
 
