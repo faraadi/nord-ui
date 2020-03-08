@@ -29,5 +29,5 @@ Also, you can try online Demo at [Codepen](https://codepen.io/faraadi/pen/RwPLJN
 	<br>
 	This site is a open-source project, You can help us to improve these documents.
 	<br>
-	look for 'edit this page' link, on every page's bottom right side.
+	Look for the 'edit this page' link, at the bottom of every page's right side.
 </p>

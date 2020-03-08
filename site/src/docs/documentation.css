@@ -22,7 +22,7 @@
 	font-size: 1.1rem
 }
 .documentation a, .documentation a:visited {
-	color: var(--nord10)
+	color: var(--nord7)
 }
 .documentation pre, .documentation p {
 	margin-bottom: 10px;

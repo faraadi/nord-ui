@@ -5,6 +5,7 @@ header {
 	z-index: 1;
 	width: 100%; 
 	background-color: var(--nord0);
+	padding: 0 15px
 }
 header > div {
 	height: 100%

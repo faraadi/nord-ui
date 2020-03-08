@@ -4,6 +4,15 @@
 	font-weight: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: "Fira Code";
+	src: url("./FiraCode-Regular.woff2");
+	font-weight: normal;
+	font-display: swap;
+}
 html {
 	font-family: Lato;
+}
+code, pre {
+	font-family: "Fira Code"
 }
