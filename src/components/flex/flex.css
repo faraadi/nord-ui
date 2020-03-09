@@ -73,6 +73,10 @@
     align-items: center;
 }
 
+.col.auto {
+    flex: 1 0 0px;
+    width: 100%;
+}
 
 /* extra small screen size classes */
 
