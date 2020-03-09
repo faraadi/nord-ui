@@ -47,7 +47,7 @@
 	background: var(--nord1);
 	padding: 4px;
 	border-radius: 2px;
-	font-size: 1em
+	font-size: 0.8em
 }
 .documentation pre[class*='language-'] {
 	position: relative;
