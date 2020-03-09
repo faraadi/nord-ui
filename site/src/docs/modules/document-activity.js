@@ -7,6 +7,8 @@ const Activity = {
 
 	previousActiveLink: null,
 
+	isMobile: false,
+
 	init() {
 		const links = document.querySelectorAll(".doc-link");
 		if(links) {
@@ -14,6 +16,7 @@ const Activity = {
 			Activity.docLinks = links;
 		}
 		const query = Activity.findPathName(window.location.search);
+		Activity.checkBrowser();
 		Activity.getDocument(query);
 		window.requestIdleCallback(Activity.themeToggler);
 	},
@@ -48,7 +51,7 @@ const Activity = {
 		window.requestIdleCallback(() => Activity.loadDocumentScripts(docName));
 		window.requestIdleCallback(Prism.highlightAll);
 		window.requestIdleCallback(Activity.addCopyButton);
-		window.requestIdleCallback(Activity.generateOutlines);
+		if(!Activity.isMobile) window.requestIdleCallback(Activity.generateOutlines);
 		Activity.updateDocEditLink(docs[docName].gitPath);
 	},
 
@@ -146,6 +149,10 @@ const Activity = {
 				temporaryScriptsContainer.append(script);
 			}
 		}
+	},
+
+	checkBrowser() {
+		if(window.innerWidth < 1280) Activity.isMobile = true;
 	}
 }
 

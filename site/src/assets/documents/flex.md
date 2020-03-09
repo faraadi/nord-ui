@@ -213,8 +213,4 @@ Mix screen sizes to build more complex grids:
 		background-color: var(--nord3-pale);
 		border: 1px solid var(--nord3)
 	}
-	.col.auto {
-    flex: 1 0 0px;
-    width: 100%;
-}
 </style>

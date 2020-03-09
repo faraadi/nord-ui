@@ -98,3 +98,8 @@
 body:not(.dark) .documentation code.inline {
 	background-color: var(--nord3)
 }
+@media only screen and (max-width: 599px) {
+	.documentation {
+		padding: 10px;
+	}
+}
