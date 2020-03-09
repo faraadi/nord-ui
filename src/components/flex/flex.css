@@ -144,6 +144,15 @@
     flex: 0 0 100%;
     width: 100%;
 }
+.hide, .xs-up-hide, .xl-down-hide {
+    display: none;
+}
+/* xs only */
+@media only screen and (max-width: 599px) {
+    .xs-hide, .xs-down-hide, .sm-down-hide, .md-down-hide, .lg-down-hide  {
+        display: none;
+    }
+}
 
 /* small screen size classes */
 @media only screen and (min-width: 600px) {
@@ -199,8 +208,16 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .sm-up-hide {
+        display: none;
+    }
 }
-
+/* small only */
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+    .sm-hide, .sm-down-hide, .md-down-hide, .lg-down-hide {
+        display: none;
+    }
+}
 
 /* medium screen size classes */
 @media only screen and (min-width: 960px) {
@@ -256,8 +273,16 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .md-up-hide {
+        display: none;
+    }
 }
-
+/* medium only */
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+    .md-hide, .md-down-hide, .lg-down-hide {
+        display: none;
+    }
+}
 
 /* large screen size classes */
 @media only screen and (min-width: 1280px) {
@@ -312,6 +337,15 @@
     .col.lg-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .lg-up-hide {
+        display: none;
+    }
+}
+/* large only */
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+    .lg-hide, .lg-down-hide {
+        display: none;
     }
 }
 
@@ -369,5 +403,8 @@
     .col.xl-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .xl-hide, .xl-up-hide {
+        display: none;
     }
 }
