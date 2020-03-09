@@ -73,6 +73,18 @@
 .align-baseline: {
     align-items: baseline;
 }
+.align-self-start {
+    align-self: flex-start;
+}
+.align-self-end {
+    align-self: flex-end;
+}
+.align-self-center {
+    align-self: center;
+}
+.align-self-baseline {
+    align-self: baseline;
+}
 
 .col.auto {
     flex: 1 0 0px;
