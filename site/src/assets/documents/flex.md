@@ -3,19 +3,24 @@
 Nord UI offers a 12 columns grid system based on CSS Flexbox.
 It's easy to use and helps building complex responsive layouts quickly with minimum effort.
 
-
 Just Like other grid systems, this one is also made up of two parts: rows and columns.
 
 Also utilities such as [Alignment](docs?page=alignment), [Visibility](docs?page=visibility) and [Gutter](docs?page=gutter) classes are available to make grids in any sizes and shapes.
 
+## Import Path
+Import following style(s) to include `flex`, `alignment`, `visibility` and `gutter` styles in your app.
+
+- Base: `nord-ui/lib/flex.css`
+- Dark Theme: `none`
+
 ## Screen Sizes and Breakpoints
 
 We support five screen sizes including:
-- `xs`: for extra small screens, up to 599px
-- `sm`: for smaller screens like mobile screens, starting at 600px
-- `md`: for medium size screens like tablets, starting at 960px
-- `lg`: for large screens like laptop and monitors, starting at 1280px 
-- `xl`: for extra large screens like TV, starting at 1920px
+- `xs`: for extra small screens like mobile screens, up to 599px
+- `sm`: for smaller screens like small tablets, starting at 600px
+- `md`: for medium screens like tablets, starting at 960px
+- `lg`: for large screens like laptop and desktop monitors, starting at 1280px 
+- `xl`: for extra large screens, starting at 1920px
 
 Each one supports its own and larger ranges. for example, `md` can affect `lg` range and `xl` range if their classes has not being used.
 
@@ -29,7 +34,7 @@ To create a row, simply add `.row` element class to a `<div>` tag.
 
 <div class='code-example'>
 	<div class='preview'>
-		<div class="row bg-nord3 simple-row">A Simple Row</div>
+		<div class="row simple-row">A Simple Row</div>
 	</div>
 	<div class='source'>
 ```html
