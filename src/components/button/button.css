@@ -13,7 +13,9 @@
     text-align: center;
     display: inline-block
 }
-
+.btn > * {
+    vertical-align: middle
+}
 .btn.primary {
     background-color: var(--nord7);
     color: var(--nord0);
