@@ -37,7 +37,7 @@ yarn add nord-ui
 import component:
 
 ```javascript
-import 'nord-ui/lib/button.css'
+import 'nord-ui/dist/button.css'
 ```
 
 import whole package:
