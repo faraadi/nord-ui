@@ -12,3 +12,5 @@
 @import './form/form.dark.css';
 @import './modal/modal.css';
 @import './collapse/collapse.css';
+@import './spinner/spinner.dark.css';
+@import './spinner/spinner.css';

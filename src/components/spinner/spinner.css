@@ -1,0 +1,54 @@
+.spinner {
+    display: inline-block
+}
+.spinner::after {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: transparent;
+    width: var(--spinner-normal-size);
+    height: var(--spinner-normal-size);
+    display: block;
+    content: "";
+    border: 3px solid transparent;
+    border-radius: 100%;
+    border-top-color: var(--nord0-pale);
+    animation: 0.8s spinner linear infinite
+}
+.spinner.small::after {
+    width: var(--spinner-small-size);
+    height: var(--spinner-small-size);
+    border-width: 2px
+}
+.spinner.large::after {
+    width: var(--spinner-large-size);
+    height: var(--spinner-large-size);
+    border-width: 4px
+}
+
+.spinner.primary::after {
+    border-top-color: var(--nord7)
+}
+.spinner.secondary::after {
+    border-top-color: var(--nord3)
+}
+.spinner.info::after {
+    border-top-color: var(--nord10)
+}
+.spinner.success::after {
+    border-top-color: var(--nord14)
+}
+.spinner.warning::after {
+    border-top-color: var(--nord12)
+}
+.spinner.danger::after {
+    border-top-color: var(--nord11)
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(1turn)
+    } 
+}

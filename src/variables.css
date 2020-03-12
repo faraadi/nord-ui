@@ -46,4 +46,8 @@
     --gutter-medium: 16px;
     --gutter-large: 24px;
     --gutter-xlarge: 36px;
+
+    --spinner-large-size: 50px;
+    --spinner-normal-size: 35px;
+    --spinner-small-size: 20px;
 }

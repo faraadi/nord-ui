@@ -1,0 +1,3 @@
+.dark .spinner:not(.primary):not(.secondary):not(.info):not(.success):not(.warning):not(.danger)::after {
+    border-top-color: var(--nord4);
+}
