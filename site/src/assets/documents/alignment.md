@@ -5,7 +5,7 @@ Alignment class can be used on `row` components to align columns in vertical or 
 ## Import Path
 Import following style(s) to include `flex`, `alignment`, `visibility` and `gutter` styles in your app.
 
-- Base: `nord-ui/lib/flex.css`
+- Base: `nord-ui/dist/flex.css`
 - Dark Theme: `none`
 
 ## Horizontial

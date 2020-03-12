@@ -12,7 +12,7 @@ Nord UI buttons can be created in three ways:
 
 Import following style(s) to include button styles in your app.
 
-- Base: `nord-ui/lib/button.css`
+- Base: `nord-ui/dist/button.css`
 - Dark Theme: `none`
 
 ## Basic Style

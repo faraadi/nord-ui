@@ -10,7 +10,7 @@ Also utilities such as [Alignment](docs?page=alignment), [Visibility](docs?page=
 ## Import Path
 Import following style(s) to include `flex`, `alignment`, `visibility` and `gutter` styles in your app.
 
-- Base: `nord-ui/lib/flex.css`
+- Base: `nord-ui/dist/flex.css`
 - Dark Theme: `none`
 
 ## Screen Sizes and Breakpoints

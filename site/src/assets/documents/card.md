@@ -5,8 +5,8 @@ A card is an excellent way to display contents over screen.
 ## Import Path
 Import following style(s) to include `card` styles in your app.
 
-- Base: `nord-ui/lib/card.css`
-- Dark Theme: `nord-ui/lib/card.dark.css`
+- Base: `nord-ui/dist/card.css`
+- Dark Theme: `nord-ui/dist/card.dark.css`
 
 ## Default Card Style
 Put a `.card` class on a `<div>` to create a `card` component.

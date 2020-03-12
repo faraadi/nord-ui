@@ -31,7 +31,7 @@ If you've installed Nord UI using NPM or Yarn, it'll provide you with two way of
 Import all components, helpers, dark theme and variables together. you just need a single import in your javascript:
 
 ```javascript
-import 'nord-ui/nord.min.css'
+import 'nord-ui/dist/nord.min.css'
 // same as
 import 'nord-ui'
 ```
@@ -39,7 +39,7 @@ import 'nord-ui'
 or html:
 
 ```html
-<link href="[path]/nord.min.css" rel="stylesheet" type="text/css">
+<link href="[path]/dist/nord.min.css" rel="stylesheet" type="text/css">
 ```
 
 > Replace `path` with path to the directory that Nord UI files exists.
@@ -53,20 +53,20 @@ Second, and way better, import components and tools individually. this is useful
 1. import `base` chunk that holds basic styles and variables needed by other components: 
 
 	```javascript
-import 'nord-ui/lib/base.css'
+import 'nord-ui/dist/base.css'
 	```
 	> Don't forget this import, other parts depends on it!
 
 2. then, you can import your desired components. for example a button:
 
 	```javascript
-import 'nord-ui/lib/button.css'
+import 'nord-ui/dist/button.css'
 	```
 
 3. (optional) import dark theme of component, if had any. for example button's dark theme:
 
    	```javascript
-import 'nord-ui/lib/button.dark.css'
+import 'nord-ui/dist/button.dark.css'
 	```
 
 That's it.

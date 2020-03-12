@@ -9,7 +9,7 @@ Nord UI will help you to toggle display property of elements in response to scre
 ## Import Path
 Import following style(s) to include `flex`, `alignment`, `visibility` and `gutter` styles in your app.
 
-- Base: `nord-ui/lib/flex.css`
+- Base: `nord-ui/dist/flex.css`
 - Dark Theme: `none`
 
 ## Basic

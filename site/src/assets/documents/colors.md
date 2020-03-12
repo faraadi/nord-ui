@@ -113,7 +113,7 @@ Nord UI uses six colors as it's color swatch. these are core colors that commonl
 
 - <span class="text-primary">Primary:</span> suitable for many UI states.
 - <span class="text-secondary">Secondary:</span> suitable for many UI states and in combination with Primary color.
-- <span class="text-info">Info:</span> useful when showin information or noticing user.
+- <span class="text-info">Info:</span> useful when showing information or noticing user.
 - <span class="text-success">Success:</span> indicates a successful operation.
 - <span class="text-warning">Warning:</span> to warn user about something.
 - <span class="text-danger">Danger:</span> indicates an error, failure operation or dangerous actions.
@@ -128,7 +128,7 @@ It's easy to modify Nord UI components and other UI element using these colors. 
 
 Import following style(s) to include colors classes in your app:
 
-- Base: `nord-ui/lib/colors.css`
+- Base: `nord-ui/dist/colors.css`
 - Dark Theme: `none`
 
 ### Texts
