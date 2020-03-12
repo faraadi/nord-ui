@@ -2,6 +2,6 @@
 	border: 2px solid var(--nord3);
 }
 
-.dark .custom-radio:disabled, .custom-radio.dsiabled {
+.dark .custom-radio:disabled, .custom-radio.disabled {
 	border-color: var(--nord3-pale);
 }
