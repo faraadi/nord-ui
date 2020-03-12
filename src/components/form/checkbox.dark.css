@@ -1,0 +1,7 @@
+.dark .custom-checkbox {
+	border: 2px solid var(--nord3);
+}
+
+.dark .custom-checkbox:disabled, .custom-checkbox.dsiabled {
+	border-color: var(--nord3-pale);
+}

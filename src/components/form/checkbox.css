@@ -1,0 +1,50 @@
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+	.custom-checkbox {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		position: relative;
+		width: 25px;
+		height: 25px;
+		margin: 0;
+		outline: none;
+		border: 2px solid var(--nord1);
+		border-radius: 2px;
+		transition-duration: 0.2s;
+		transition-property: border-radius, background-color;
+		cursor: pointer;
+	}
+	.custom-checkbox:after {
+		content: "";
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		right: 30%;
+		bottom: 20%;
+		border-right: 2px solid transparent;
+		border-bottom: 2px solid transparent;
+		border-radius: 0;
+		transition-duration: 0.1s;
+		transition-property: border-color, transform;
+	}
+	.custom-checkbox:checked {
+		border-radius: 6px;
+		background-color: var(--nord7)
+	}
+	.custom-checkbox:checked:after {
+		border-color: white;
+		transform: rotate(45deg) translate(-15%,-10%);
+	}
+
+	.custom-checkbox:focus {
+		box-shadow: 0 0 0 2px var(--nord7)
+	}
+
+	.custom-checkbox:disabled, .custom-checkbox.dsiabled {
+		cursor: not-allowed;
+		border-color: var(--nord1-pale);
+	}
+	.custom-checkbox:disabled:checked, .custom-checkbox.disabled:checked {
+		background-color: var(--nord7-pale);
+	}
+}
