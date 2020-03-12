@@ -58,7 +58,7 @@ const splittedBudlesConfig = {
     devtool: "none",
     entry: resolveSplittedEntries(componentsPath),
     output: {
-        path: path.resolve(distPath, "lib")
+        path: distPath
     },
     module: {
         rules: [
