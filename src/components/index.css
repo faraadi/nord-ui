@@ -16,3 +16,5 @@
 @import './spinner/spinner.css';
 @import './form/checkbox.css';
 @import './form/checkbox.dark.css';
+@import './form/radio.css';
+@import './form/radio.dark.css'

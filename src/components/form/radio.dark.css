@@ -1,0 +1,7 @@
+.dark .custom-radio {
+	border: 2px solid var(--nord3);
+}
+
+.dark .custom-radio:disabled, .custom-radio.dsiabled {
+	border-color: var(--nord3-pale);
+}

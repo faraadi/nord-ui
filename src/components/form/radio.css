@@ -1,0 +1,46 @@
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+	.custom-radio {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		position: relative;
+		width: 25px;
+		height: 25px;
+		margin: 0;
+		outline: none;
+		border: 2px solid var(--nord1);
+		border-radius: 100%;
+		transition-duration: 0.2s;
+		transition-property: background-color, box-shadow;
+		cursor: pointer;
+	}
+	.custom-radio:after {
+		content: "";
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		right: 25%;
+		bottom: 25%;
+		border-radius: 100%;
+		transition-duration: 0.3s;
+		transition-property: background-color;
+	}
+	.custom-radio:checked {
+		background-color: var(--nord7)
+	}
+	.custom-radio:checked:after {
+		background-color: var(--nord6);
+	}
+
+	.custom-radio:focus {
+		box-shadow: 0 0 0 2px var(--nord7)
+	}
+
+	.custom-radio:disabled, .custom-radio.disabled {
+		border-color: var(--nord1-pale);
+		cursor: not-allowed;
+	}
+	.custom-radio:disabled:checked, .custom-radio.disabled:checked {
+		background-color: var(--nord7-pale);
+	}
+}
