@@ -17,6 +17,7 @@ import CollapseDoc from './collapse.md';
 import CollapseScript from './js/collapse.script.js';
 import FormDoc from './form.md';
 import ModalDoc from './modal.md';
+import SpinnerDoc from './spinner.md';
 import TooltipDoc from './tooltip.md';
 import HelperClassesDoc from './helper-classes.md';
 import DefaultsDoc from './defaults.md';
@@ -115,6 +116,11 @@ export default {
 		path: "/modal",
 		file: ModalDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/modal.md"
+	},
+	"spinner": {
+		path: "/spinner",
+		file: SpinnerDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/spinner.md"
 	},
 	"tooltip": {
 		path: "/tooltip",
