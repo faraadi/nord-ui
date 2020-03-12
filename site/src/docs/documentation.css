@@ -90,6 +90,10 @@
 	width: 100%;
 	position: relative;
 }
+.documentation .source.fixed-height {
+	max-height: 500px;
+	overflow-y: auto
+}
 .documentation .source > pre {
 	position: static;
 	margin: 0;

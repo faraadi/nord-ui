@@ -8,6 +8,7 @@ Just Like other grid systems, this one is also made up of two parts: rows and co
 Also utilities such as [Alignment](docs?page=alignment), [Visibility](docs?page=visibility) and [Gutter](docs?page=gutter) classes are available to make grids in any sizes and shapes.
 
 ## Import Path
+
 Import following style(s) to include `flex`, `alignment`, `visibility` and `gutter` styles in your app.
 
 - Base: `nord-ui/dist/flex.css`
@@ -71,7 +72,7 @@ By default, columns width computed based on their content width. but you can set
 
 ### Equal Width
 
-Columns can share with equally with each others. if there is a single column, then it'll fill the parent element's width.
+Columns can share width equally with each others. if there is a single column, then it'll fill the parent element's width.
 
 Use `.auto` modifier class on `<div class='col'>` to share width among columns:
 
@@ -95,7 +96,7 @@ Use `.auto` modifier class on `<div class='col'>` to share width among columns:
 </div>
 <br>
 
-You can define equal width only on some screen size. you `.[size]-auto` where, size is one of screen sizes.
+You can define equal width only on some screen sizes. use `.[size]-auto` where, size is one of screen sizes.
 
 For example `.lg-auto` will shares width equally only on large screens.
 
@@ -144,7 +145,7 @@ Use `xs` size to apply on all screen size.
 	<div class='preview'>
 		<div class="row">
 			<div class="col simple-col xs-12">This column has full width on all screen sizes</div>
-			<div class="col simple-col xs-12 md-6">This column has full width small down and half width on medium up</div>
+			<div class="col simple-col xs-12 md-6">This column has full width on small down and half width on medium up</div>
 		</div>
 	</div>
 	<div class='source'>
