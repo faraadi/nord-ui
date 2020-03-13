@@ -57,16 +57,16 @@ import 'nord-ui/dist/base.css'
 	```
 	> Don't forget this import, other parts depends on it!
 
-2. then, you can import your desired components. for example a button:
+2. then, you can import your desired components. for example a card:
 
 	```javascript
-import 'nord-ui/dist/button.css'
+import 'nord-ui/dist/card.css'
 	```
 
-3. (optional) import dark theme of component, if had any. for example button's dark theme:
+3. (optional) import dark theme of component, if there's any. for example card's dark theme:
 
    	```javascript
-import 'nord-ui/dist/button.dark.css'
+import 'nord-ui/dist/card.dark.css'
 	```
 
 That's it.

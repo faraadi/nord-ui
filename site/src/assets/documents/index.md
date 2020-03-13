@@ -8,7 +8,7 @@ You can:
 
 - Head to [Introduction](https://nordui.netlify.com/docs?page=introduction) page to start from basics.
 
-- Or check our [Quick Start Guide](https://nordui.netlify.com/docs?page=quick-start). make sure you had read about [Usage](https://nordui.netlify.com/docs?page=usage).
+- Or kick start with [Quick Start Guide](https://nordui.netlify.com/docs?page=quick-start). make sure you had read about [Usage](https://nordui.netlify.com/docs?page=usage).
 
 
 Also, you can try online Demo at [Codepen](https://codepen.io/faraadi/pen/RwPLJNW) for a quick look.
