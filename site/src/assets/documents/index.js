@@ -1,29 +1,35 @@
 import IndexDoc from './index.md';
-import QuickStartDoc from './quick-start.md';
-import IntroductionDoc from './introduction.md';
-import InstallationDoc from './installation.md';
-import UsageDoc from './usage.md';
-import ColorsDoc from './colors.md';
-import TypographyDoc from './typography.md';
-import VariablesDoc from './variables.md';
-import FlexDoc from './flex.md';
-import AlignmentDoc from './alignment.md';
-import VisibilityDoc from './visibility.md';
-import GutterDoc from './gutter.md';
-import ButtonDoc from './button.md';
-import CalloutDoc from './callout.md';
-import CardDoc from './card.md';
-import CollapseDoc from './collapse.md';
-import CollapseScript from './js/collapse.script.js';
-import FormDoc from './form.md';
-import ModalDoc from './modal.md';
-import SpinnerDoc from './spinner.md';
-import TooltipDoc from './tooltip.md';
-import HelperClassesDoc from './helper-classes.md';
-import DefaultsDoc from './defaults.md';
-import DarkThemeDoc from './dark-theme.md';
-import RightToLeftDoc from './right-to-left.md';
-import CustomizationDoc from './customization.md';
+
+import QuickStartDoc from './getting-started/quick-start.md';
+import IntroductionDoc from './getting-started/introduction.md';
+import InstallationDoc from './getting-started/installation.md';
+import UsageDoc from './getting-started/usage.md';
+
+import ColorsDoc from './core/colors.md';
+import TypographyDoc from './core/typography.md';
+import VariablesDoc from './core/variables.md';
+
+import FlexDoc from './flexbox/flex.md';
+import AlignmentDoc from './flexbox/alignment.md';
+import VisibilityDoc from './flexbox/visibility.md';
+import GutterDoc from './flexbox/gutter.md';
+
+import ButtonDoc from './components/button.md';
+import CalloutDoc from './components/callout.md';
+import CardDoc from './components/card.md';
+import CollapseDoc from './components/collapse.md';
+import CollapseScript from './components/js/collapse.script.js';
+import FormDoc from './components/form.md';
+import ModalDoc from './components/modal.md';
+import SpinnerDoc from './components/spinner.md';
+import TooltipDoc from './components/tooltip.md';
+
+import HelperClassesDoc from './utility/helper-classes.md';
+import DefaultsDoc from './utility/defaults.md';
+
+import DarkThemeDoc from './guides/dark-theme.md';
+import RightToLeftDoc from './guides/right-to-left.md';
+import CustomizationDoc from './guides/customization.md';
 
 export default {
 	"index" : {
