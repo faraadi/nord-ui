@@ -58,7 +58,7 @@ const Activity = {
 		window.requestIdleCallback(Prism.highlightAll);
 		window.requestIdleCallback(Activity.addCopyButton);
 		if(!Activity.isMobile) window.requestIdleCallback(Activity.generateOutlines);
-		Activity.updateDocEditLink(docs[docName].gitPath);
+		Activity.updateDocEditLink(docName, docs[docName].gitPath);
 	},
 
 	renderPreProcess() {
@@ -118,16 +118,18 @@ const Activity = {
 		}
 	},
 
-	updateDocEditLink(gitPath) {
-		nodes.get(".doc-edit-link").href = gitPath;
+	updateDocEditLink(docName, gitPath) {
+		const editLink = nodes.get(".doc-edit-link");
+		editLink.href = gitPath;
+		editLink.innerText = `edit ${docName} page`;
 	},
 
 	themeToggler() {
 		nodes.get(".toggle-theme-btn").onclick = function(e) {
 			e.preventDefault();
 			document.body.classList.contains("dark")
-				? themeToggleButton.innerHTML = darkIcon
-				: themeToggleButton.innerHTML = lightIcon;
+				? e.target.innerHTML = darkIcon
+				: e.target.innerHTML = lightIcon;
 			document.body.classList.toggle("dark");
 		}
 	},
