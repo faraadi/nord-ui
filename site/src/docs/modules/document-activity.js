@@ -125,11 +125,12 @@ const Activity = {
 	},
 
 	themeToggler() {
-		nodes.get(".toggle-theme-btn").onclick = function(e) {
+		const themeTogglerBtn = nodes.get(".toggle-theme-btn")
+		themeTogglerBtn.onclick = function(e) {
 			e.preventDefault();
 			document.body.classList.contains("dark")
-				? e.target.innerHTML = darkIcon
-				: e.target.innerHTML = lightIcon;
+				? themeTogglerBtn.innerHTML = darkIcon
+				: themeTogglerBtn.innerHTML = lightIcon;
 			document.body.classList.toggle("dark");
 		}
 	},
