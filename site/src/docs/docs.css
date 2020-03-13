@@ -17,6 +17,23 @@ header .logo {
 main, .leftbar, .outline-container {
 	margin-top: 60px
 }
+main {
+	height: calc(100% - 60px)
+}
+.wrapper, .docs-container {
+	height: 100%;
+}
+.docs-container {
+	position: relative;
+}
+.docs-loading {
+	position: absolute;
+	top: calc(50% - 29px);
+	right: calc(50% - 29px);
+}
+.docs-loading.hide {
+	display: none !important;
+}
 header .nav-container {
 	list-style: none;
 	display: inline-block;

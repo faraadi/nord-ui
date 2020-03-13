@@ -36,7 +36,7 @@
 			<div class="col xs-8 md-8">
 				<div class="row align-center">
 					<a href="." title="Nord UI">
-						<img class="logo" src="/images/logo-minimal.svg" alt="Nord UI Logo" loading='lazy'>
+						<img class="logo" src="/images/logo-minimal.svg" alt="Nord UI Logo">
 					</a>
 					<ul class="nav-container lg-down-hide">
 						<li><a href=".">Home</a></li>
@@ -60,7 +60,7 @@
 		</div>
 	</header>
 	<main>
-		<div class="row">
+		<div class="wrapper row">
 			<div class="col lg-2 lg-down-hide">
 				<aside class="leftbar">
 					
@@ -139,8 +139,10 @@
 					</div>
 				</aside>
 			</div>
-			<div class="col xs-12 lg-8">
-				<article id="main" class="documentation"></article>
+			<div class="col xs-12 lg-8 docs-container">
+				<article id="main" class="documentation">
+				</article>
+				<span class="spinner primary large docs-loading"></span>
 			</div>	
 			<div class="col lg-2 lg-down-hide">
 				<aside class="rightbar">

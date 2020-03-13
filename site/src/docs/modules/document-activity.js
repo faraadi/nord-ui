@@ -1,5 +1,8 @@
 import { markdownConverter, Prism } from './index.js';
 import { clipboard } from 'modules';
+import nodes from './nodes-container.js';
+import loading from './loading-activity.js';
+import utils from './utils';
 import docs from 'assets/documents';
 
 const Activity = {
@@ -10,36 +13,39 @@ const Activity = {
 	isMobile: false,
 
 	init() {
-		const links = document.querySelectorAll(".doc-link");
+		const links = nodes.get(".doc-link", true);
 		if(links) {
 			links.forEach( link => link.onclick = Activity.onLinkClick);
 			Activity.docLinks = links;
 		}
-		const query = Activity.findPathName(window.location.search);
+		const query = utils.findPathName(window.location.search);
 		Activity.checkBrowser();
-		Activity.getDocument(query);
+		Activity.goToDoc(query);
 		window.requestIdleCallback(Activity.themeToggler);
 	},
 
 	onLinkClick(e) {
 		e.preventDefault();
-		const pathname = Activity.findPathName(e.target.search);
+		const pathname = utils.findPathName(e.target.search);
 		window.history.pushState({}, pathname, e.target.href);
-		Activity.getDocument(pathname);
+		Activity.goToDoc(pathname);
 	},
 
-	async getDocument(docName) {
+	async goToDoc(docName) {
+		loading.show();
+		nodes.get("#main").innerHTML = null;
 		if(docName in docs) {
-			const docFile = await Activity.getDocumentFile(docs[docName].file);
+			const docFile = await utils.getDocumentFile(docs[docName].file);
 			if(docFile) return Activity.renderDoc(docName, docFile);
 		}
 		Activity.renderDoc(undefined, undefined);
 	},
 
 	renderDoc(docName, docFile) {
+		loading.hide();
 		Activity.renderPreProcess();
 		if(docFile) {
-			const mainElement = document.querySelector("#main");
+			const mainElement = nodes.get("#main");
 			mainElement.innerHTML = markdownConverter(docFile);
 			Activity.renderPostProcess(docName);
 		}
@@ -56,14 +62,14 @@ const Activity = {
 	},
 
 	renderPreProcess() {
-		const temporaryScriptsContainer = document.querySelector(".temporary-scripts-container");
+		const temporaryScriptsContainer = nodes.get(".temporary-scripts-container");
 		for(let child of temporaryScriptsContainer.children) child.remove();	
 	},
 
 	activateDocLink() {
 		if(Activity.previousActiveLink) Activity.previousActiveLink.classList.remove("active");
-		if(!Activity.docLinks) Activity.docLinks = document.querySelectorAll(".doc-link");
-		for(let docLink of Activity.docLinks) {
+		const docLinks = nodes.get(".doc-link", true);
+		for(let docLink of docLinks) {
 			if(docLink.href === window.location.href) {
 				docLink.classList.add("active");
 				Activity.previousActiveLink = docLink;
@@ -72,18 +78,8 @@ const Activity = {
 		}
 	},
 
-	async getDocumentFile(path) {
-		const response = await fetch(path);
-		return response.text();
-	},
-
-	findPathName(query) {
-		const pathName = new URLSearchParams(query).get("page");
-		return (pathName === null || pathName === "") ? "index" : pathName;
-	},
-
 	addCopyButton() {
-		document.querySelectorAll("pre[class*='language-']").forEach(function(el) {
+		nodes.get("pre[class*='language-']", true, true).forEach(function(el) {
 			const button = document.createElement("button");
 			button.className = "copy-btn";
 			button.innerText = "copy";
@@ -97,7 +93,7 @@ const Activity = {
 	},
 
 	generateOutlines() {
-		const headings = document.querySelectorAll(".documentation>h2, .documentation>h3, .documentation>h4");
+		const headings = nodes.get(".documentation>h2, .documentation>h3, .documentation>h4", true);
 		if(headings && headings.length) {
 			const outlineContainer = document.createElement("div");
 			outlineContainer.className = "outline-container";
@@ -115,33 +111,31 @@ const Activity = {
 				outlineList.append(li);
 			}
 			outlineContainer.append(outlineList);
-			const rightbar = document.querySelector(".rightbar");
+			const rightbar = nodes.get(".rightbar");
 			if(rightbar.childElementCount > 1) rightbar.removeChild(rightbar.children[0]);
 			outlineContainer.style.width = rightbar.parentNode.clientWidth + "px";
 			rightbar.prepend(outlineContainer);
 		}
 	},
 
-	updateDocEditLink(gitPath, target) {
-		const link = document.querySelector(".doc-edit-link");
-		link.href = gitPath;
+	updateDocEditLink(gitPath) {
+		nodes.get(".doc-edit-link").href = gitPath;
 	},
 
 	themeToggler() {
-		const themeToggleButton = document.querySelector(".toggle-theme-btn");
-		themeToggleButton.onclick = function(e) {
+		nodes.get(".toggle-theme-btn").onclick = function(e) {
 			e.preventDefault();
 			document.body.classList.contains("dark")
-			? themeToggleButton.innerHTML = darkIcon
-			: themeToggleButton.innerHTML = lightIcon;
+				? themeToggleButton.innerHTML = darkIcon
+				: themeToggleButton.innerHTML = lightIcon;
 			document.body.classList.toggle("dark");
 		}
 	},
 
 	loadDocumentScripts(docName) {
-		const {scripts} = docs[docName];
+		const { scripts } = docs[docName];
 		if(scripts) {
-			const temporaryScriptsContainer = document.querySelector(".temporary-scripts-container");
+			const temporaryScriptsContainer = nodes.get(".temporary-scripts-container");
 			for(let scriptPath of scripts) {
 				const script = document.createElement("script");
 				script.src = scriptPath;
