@@ -1,6 +1,5 @@
 @import './dark-theme/dark-theme.css';
 @import './button/button.css';
-@import './flex/flex.css';
 @import './card/card.css';
 @import './card/card.dark.css';
 @import './tooltip/tooltip.css';
@@ -17,4 +16,5 @@
 @import './form/checkbox.css';
 @import './form/checkbox.dark.css';
 @import './form/radio.css';
-@import './form/radio.dark.css'
+@import './form/radio.dark.css';
+@import './flex/flex.css';
