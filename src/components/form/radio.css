@@ -13,6 +13,10 @@
 		transition-duration: 0.2s;
 		transition-property: background-color, box-shadow;
 		cursor: pointer;
+		vertical-align: middle;
+		-webkit-margin-end: 5px;
+		-moz-margin-end: 5px;
+		margin-inline-end: 5px;
 	}
 	.custom-radio:after {
 		content: "";
@@ -24,6 +28,11 @@
 		border-radius: 100%;
 		transition-duration: 0.3s;
 		transition-property: background-color;
+	}
+	.custom-radio-label {
+		vertical-align: middle;
+		cursor: pointer;
+		font-size: 1.1rem;
 	}
 	.custom-radio:checked {
 		background-color: var(--nord7)

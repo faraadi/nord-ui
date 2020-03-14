@@ -13,6 +13,10 @@
 		transition-duration: 0.2s;
 		transition-property: border-radius, background-color, box-shadow;
 		cursor: pointer;
+		vertical-align: middle;
+		-webkit-margin-end: 5px;
+		-moz-margin-end: 5px;
+		margin-inline-end: 5px;
 	}
 	.custom-checkbox:after {
 		content: "";
@@ -26,6 +30,11 @@
 		border-radius: 0;
 		transition-duration: 0.1s;
 		transition-property: border-color, transform;
+	}
+	.custom-checkbox-label {
+		vertical-align: middle;
+		cursor: pointer;
+		font-size: 1.1rem;
 	}
 	.custom-checkbox:checked {
 		border-radius: 6px;
