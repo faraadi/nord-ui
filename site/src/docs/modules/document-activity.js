@@ -93,7 +93,7 @@ const Activity = {
 	},
 
 	generateOutlines() {
-		const headings = nodes.get(".documentation>h2, .documentation>h3, .documentation>h4", true);
+		const headings = nodes.get(".documentation>h2, .documentation>h3, .documentation>h4", true, true);
 		if(headings && headings.length) {
 			const outlineContainer = document.createElement("div");
 			outlineContainer.className = "outline-container";
