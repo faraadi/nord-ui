@@ -3,7 +3,7 @@
 Collapse is a widely-used widget that could toggle visibility of it's content.
 
 ## Import Path
-Import following style(s) to include button styles in your app.
+Import following style(s) to include `collapse` styles in your app.
 
 - Base: `nord-ui/dist/collapse.css`
 - Dark Theme: `none`

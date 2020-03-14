@@ -4,7 +4,7 @@ Callout can highlight messages and important content and give it the user's atte
 
 ## Import Path
 
-Import following style(s) to include button styles in your app.
+Import following style(s) to include `callout` styles in your app.
 
 - Base: `nord-ui/dist/callout.css`
 - Dark Theme: `nord-ui/dist/callout.dark.css`

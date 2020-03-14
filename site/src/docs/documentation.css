@@ -45,7 +45,7 @@
 .documentation code.inline {
 	color: var(--nord7);
 	background: var(--nord1);
-	padding: 4px;
+	padding: 2px 4px;
 	border-radius: 2px;
 	font-size: 0.8em
 }

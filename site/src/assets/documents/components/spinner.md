@@ -4,7 +4,7 @@ Spinners can indicates a loading state in your UI.
 
 ## Import Path
 
-Import following style(s) to include button styles in your app.
+Import following style(s) to include `spinner` styles in your app.
 
 - Base: `nord-ui/dist/spinner.css`
 - Dark Theme: `nord-ui/dist/spinner.dark.css`
