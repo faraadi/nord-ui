@@ -1,12 +1,12 @@
 # Documentation
-Welcome to docuemntation.
+Welcome to documents.
 
 This site will guide you to build Amazing websites with Nord UI.
 
 You can:
 
 
-- Head to [Introduction](https://nordui.netlify.com/docs?page=introduction) page to start from basics.
+- Head to [Introduction](https://nordui.netlify.com/docs?page=introduction) page to learn from basics.
 
 - Or kick start with [Quick Start Guide](https://nordui.netlify.com/docs?page=quick-start). make sure you had read about [Usage](https://nordui.netlify.com/docs?page=usage).
 

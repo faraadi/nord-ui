@@ -20,7 +20,7 @@ Nord UI written entirely in css (no preprocessor). so it's easy to integrate it 
 
 Whether you're building a SPA, an universal app or a static site, you just have to import Nord UI bundle and start making your app.
 
-But some components need javascript functionality to work (like `modal`). we provide only required classes to work and you need to handle class manipulation to use them in your app. some components (like `collapse`) also give you chances to whether use javascript with them or use only plain html.
+Altough components created using CSS, some of them need javascript functionality to work (like `modal`). we provide only required classes to work and you need to handle class manipulation to use them in your app. some components (like `collapse`) also give you chances to whether use javascript with them or use only plain html.
 
 ## Browser Compatibility
 

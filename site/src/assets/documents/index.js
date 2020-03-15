@@ -21,6 +21,7 @@ import CollapseDoc from './components/collapse.md';
 import CollapseScript from './components/js/collapse.script.js';
 import FormDoc from './components/form.md';
 import ModalDoc from './components/modal.md';
+import ModalScript from './components/js/modal.script.js';
 import SpinnerDoc from './components/spinner.md';
 import TooltipDoc from './components/tooltip.md';
 
@@ -121,7 +122,8 @@ export default {
 	"modal": {
 		path: "/modal",
 		file: ModalDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/modal.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/modal.md",
+		scripts: [ModalScript]
 	},
 	"spinner": {
 		path: "/spinner",

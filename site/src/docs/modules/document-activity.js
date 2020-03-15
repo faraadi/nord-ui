@@ -36,20 +36,17 @@ const Activity = {
 		nodes.get("#main").innerHTML = null;
 		if(docName in docs) {
 			const docFile = await utils.getDocumentFile(docs[docName].file);
-			if(docFile) return Activity.renderDoc(docName, docFile);
+			if(docFile) Activity.renderDoc(docName, docFile);
 		}
-		Activity.renderDoc(undefined, undefined);
+		else render404();
 	},
 
 	renderDoc(docName, docFile) {
-		loading.hide();
 		Activity.renderPreProcess();
-		if(docFile) {
-			const mainElement = nodes.get("#main");
-			mainElement.innerHTML = markdownConverter(docFile);
-			Activity.renderPostProcess(docName);
-		}
-		else render404();
+		const mainElement = nodes.get("#main");
+		mainElement.innerHTML = markdownConverter(docFile);
+		Activity.renderPostProcess(docName);
+		loading.hide();
 	},
 
 	renderPostProcess(docName) {
@@ -94,6 +91,8 @@ const Activity = {
 
 	generateOutlines() {
 		const headings = nodes.get(".documentation>h2, .documentation>h3, .documentation>h4", true, true);
+		const rightbar = nodes.get(".rightbar");
+		rightbar.innerHTML = null;
 		if(headings && headings.length) {
 			const outlineContainer = document.createElement("div");
 			outlineContainer.className = "outline-container";
@@ -111,7 +110,6 @@ const Activity = {
 				outlineList.append(li);
 			}
 			outlineContainer.append(outlineList);
-			const rightbar = nodes.get(".rightbar");
 			if(rightbar.childElementCount > 1) rightbar.removeChild(rightbar.children[0]);
 			outlineContainer.style.width = rightbar.parentNode.clientWidth + "px";
 			rightbar.prepend(outlineContainer);
