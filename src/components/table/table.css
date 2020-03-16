@@ -1,0 +1,25 @@
+.table {
+	width: 100%;
+}
+.table td,th {
+	padding: 10px 15px;
+	text-align: center
+}
+.table thead tr {
+	background-color: var(--nord2);
+	color: var(--nord4)
+}
+.table tbody tr:nth-child(2n-1) {
+	background-color: var(--nord4)
+}
+.table, .table  th, .table  td {
+	border-collapse: collapse;
+}
+
+.table.interactive tbody tr {
+	cursor: pointer;
+}
+
+.table.interactive tbody tr:hover {
+	background-color: var(--nord3-pale)
+}

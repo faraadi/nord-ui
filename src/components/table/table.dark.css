@@ -1,0 +1,6 @@
+.dark .table tbody tr:nth-child(2n-1) {
+	background-color: var(--nord3-pale)
+}
+.dark .table.interactive tbody tr:hover {
+	background-color: var(--nord3)
+}

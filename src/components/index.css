@@ -17,4 +17,6 @@
 @import './form/checkbox.dark.css';
 @import './form/radio.css';
 @import './form/radio.dark.css';
+@import './table/table.css';
+@import './table/table.dark.css';
 @import './flex/flex.css';
