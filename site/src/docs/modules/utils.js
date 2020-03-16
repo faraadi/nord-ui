@@ -3,8 +3,10 @@ export default {
 		const response = await fetch(path);
 		return response.text();
 	},
-	findPathName(query) {
-		const pathName = new URLSearchParams(query).get("page");
-		return (pathName === null || pathName === "") ? "index" : pathName;
+	findPathName(path) {
+		if (path.startsWith("/")) path = path.slice(1);
+		const [,section, page] = path.split("/");
+		if(!section || !page) return { page: "index" };
+		return { section, page };
 	},
 }

@@ -545,4 +545,4 @@ Make sure your inputs have `type="radio"` and same `name` attributes.
 </div>
 <br>
 
-Custom Checkbox and Radio elements have their own Dark Theme styles. you need to include those styles if you're going to use them in Dark Theme. check [Import Path](/docs?page=form#importpath) section.
+Custom Checkbox and Radio elements have their own Dark Theme styles. you need to include those styles if you're going to use them in Dark Theme. check [Import Path](/docs/components/form#importpath) section.

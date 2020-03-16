@@ -27,7 +27,11 @@ module.exports = {
 		contentBase: publicPath,
 		host: "0.0.0.0",
 		clientLogLevel: "silent",
-		historyApiFallback: true,
+		historyApiFallback: {
+			rewrites: [
+			  { from: "docs/*", to: '/docs' }
+			]
+		},
 		watchContentBase: true,
 		quiet: true,
 		overlay: {

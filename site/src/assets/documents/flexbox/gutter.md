@@ -78,7 +78,7 @@ These are default sizes, in pixel:
 
 ## Customize Gutter Sizes
 
-It is possible to customize gutter sizes and change those default values using css variables. refer to [Customization](/docs?page=customization) for instruction.
+It is possible to customize gutter sizes and change those default values using css variables. refer to [Customization](/docs/guides/customization) for instruction.
 
 <style type="text/css">
 	.simple-row {

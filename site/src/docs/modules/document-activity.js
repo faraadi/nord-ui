@@ -18,25 +18,27 @@ const Activity = {
 			links.forEach( link => link.onclick = Activity.onLinkClick);
 			Activity.docLinks = links;
 		}
-		const query = utils.findPathName(window.location.search);
 		Activity.checkBrowser();
-		Activity.goToDoc(query);
+		Activity.goToDoc();
 		window.requestIdleCallback(Activity.themeToggler);
+		window.onpopstate = Activity.onHistoryChange;
 	},
 
 	onLinkClick(e) {
 		e.preventDefault();
-		const pathname = utils.findPathName(e.target.search);
+		const pathname = utils.findPathName(e.target.pathname);
 		window.history.pushState({}, pathname, e.target.href);
 		Activity.goToDoc(pathname);
 	},
 
-	async goToDoc(docName) {
+	async goToDoc() {
 		loading.show();
 		nodes.get("#main").innerHTML = null;
-		if(docName in docs) {
-			const docFile = await utils.getDocumentFile(docs[docName].file);
-			if(docFile) Activity.renderDoc(docName, docFile);
+		const { page } = utils.findPathName(window.location.pathname);
+		console.log(page)
+		if(page in docs) {
+			const docFile = await utils.getDocumentFile(docs[page].file);
+			if(docFile) Activity.renderDoc(page, docFile);
 		}
 		else render404();
 	},
@@ -148,6 +150,10 @@ const Activity = {
 
 	checkBrowser() {
 		if(window.innerWidth < 1280) Activity.isMobile = true;
+	},
+
+	onHistoryChange(e) {
+		Activity.goToDoc()
 	}
 }
 

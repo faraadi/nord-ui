@@ -5,7 +5,7 @@ It's easy to use and helps building complex responsive layouts quickly with mini
 
 Just Like other grid systems, this one is also made up of two parts: rows and columns.
 
-Also utilities such as [Alignment](docs?page=alignment), [Visibility](docs?page=visibility) and [Gutter](docs?page=gutter) classes are available to make grids in any sizes and shapes.
+Also utilities such as [Alignment](/docs/flexbox/alignment), [Visibility](/docs/flexbox/visibility) and [Gutter](/docs/flexbox/gutter) classes are available to make grids in any sizes and shapes.
 
 ## Import Path
 
