@@ -23,6 +23,7 @@ import FormDoc from './components/form.md';
 import ModalDoc from './components/modal.md';
 import ModalScript from './components/js/modal.script.js';
 import SpinnerDoc from './components/spinner.md';
+import TableDoc from './components/table.md';
 import TooltipDoc from './components/tooltip.md';
 
 import HelperClassesDoc from './utility/helper-classes.md';
@@ -134,6 +135,11 @@ export default {
 		path: "/tooltip",
 		file: TooltipDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/tooltip.md"
+	},
+	"table": {
+		path: "/table",
+		file: TableDoc,
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/table.md"
 	},
 	"dark-theme": {
 		path: "/dark-theme",
