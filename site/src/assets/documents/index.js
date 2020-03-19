@@ -37,133 +37,133 @@ export default {
 	"index" : {
 		path: "/",
 		file: IndexDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/index.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/getting-started/index.md"
 	},
 	"quick-start": {
 		path: "/quick-start",
 		file: QuickStartDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/quick-start.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/getting-started/quick-start.md"
 	},
 	"introduction": {
 		path: "/introduction",
 		file: IntroductionDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/introduction.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/getting-started/introduction.md"
 	},
 	"installation": {
 		path: "/installation",
 		file: InstallationDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/installation.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/getting-started/installation.md"
 	},
 	"usage": {
 		path: "/usage",
 		file: UsageDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/usage.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/getting-started/usage.md"
 	},
 	"colors": {
 		path: "/usage",
 		file: ColorsDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/colors.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/core/colors.md"
 	},
 	"typography": {
 		path: "/typography",
 		file: TypographyDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/typography.md"	
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/core/typography.md"	
 	},
 	"variables": {
 		path: "/variables",
 		file: VariablesDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/variables.md"	
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/core/variables.md"	
 	},
 	"flex": {
 		path: "/flex",
 		file: FlexDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/flex.md"	
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/flexbox/flex.md"	
 	},
 	"alignment": {
 		path: "/alignment",
 		file: AlignmentDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/alignment.md"	
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/flexbox/alignment.md"	
 	},
 	"visibility": {
 		path: "/visibility",
 		file: VisibilityDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/visibility.md"	
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/flexbox/visibility.md"	
 	},
 	"gutter": {
 		path: "/gutter",
 		file: GutterDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/gutter.md"	
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/flexbox/gutter.md"	
 	},
 	"button": {
 		path: "/button",
 		file: ButtonDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/button.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/button.md"
 	},
 	"callout": {
 		path: "/callout",
 		file: CalloutDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/callout.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/callout.md"
 	},
 	"card": {
 		path: '/card',
 		file: CardDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/card.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/card.md"
 	},
 	"collapse": {
 		path: "/collapse",
 		file: CollapseDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/collapse.md",
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/collapse.md",
 		scripts: [CollapseScript]
 	},
 	"form": {
 		path: "/form",
 		file: FormDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/form.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/form.md"
 	},
 	"modal": {
 		path: "/modal",
 		file: ModalDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/modal.md",
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/modal.md",
 		scripts: [ModalScript]
 	},
 	"spinner": {
 		path: "/spinner",
 		file: SpinnerDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/spinner.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/spinner.md"
 	},
 	"tooltip": {
 		path: "/tooltip",
 		file: TooltipDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/tooltip.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/tooltip.md"
 	},
 	"table": {
 		path: "/table",
 		file: TableDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/table.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/components/table.md"
 	},
 	"dark-theme": {
 		path: "/dark-theme",
 		file: DarkThemeDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/dark-theme.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/guides/dark-theme.md"
 	},
 	"helper-classes": {
 		path: "/helper-classes",
 		file: HelperClassesDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/helper-classes.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/utility/helper-classes.md"
 	},
 	"defaults": {
 		path: "/defaults",
 		file: DefaultsDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/defaults.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/guides/utility/defaults.md"
 	},
 	"rtl": {
 		path: "/right-to-left",
 		file: RightToLeftDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/right-to-left.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/guides/right-to-left.md"
 	},
 	"customization": {
 		path: "/customization",
 		file: CustomizationDoc,
-		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/customization.md"
+		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/guides/customization.md"
 	},
 };
