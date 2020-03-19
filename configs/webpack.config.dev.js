@@ -11,7 +11,8 @@ const config = {
     target: 'web',
     devtool: "none",
     entry: {
-        main: path.resolve(srcPath, 'index.css')
+        nord: path.resolve(srcPath, 'index.css'),
+        "nord.rtl": path.resolve(srcPath, 'index.rtl.css')
     },
     output: {
         path: distPath
@@ -36,7 +37,7 @@ const config = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'nord.min.css',
+            filename: '[name].min.css',
             ignoreOrder: false
         }),
         new FixStyleOnlyEntriesPlugin(),
