@@ -156,7 +156,7 @@ export default {
 		file: DefaultsDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/defaults.md"
 	},
-	"right-to-left": {
+	"rtl": {
 		path: "/right-to-left",
 		file: RightToLeftDoc,
 		gitPath: "https://github.com/faraadi/nord-ui/blob/master/site/src/assets/documents/right-to-left.md"

@@ -12,7 +12,7 @@ Import following style(s) to include `table` styles in your app.
 
 ## Basic
 
-Using `table` is simple. just add `.table` class to `<table>` tag.
+Using `table` is simple. just add `.table` class to `<table>` tag. other tags like `thead`, `tbody`, `tr` does not need any classes.
 
 <div class='code-example'>
 	<div class='preview'>

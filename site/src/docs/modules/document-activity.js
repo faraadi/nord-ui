@@ -35,7 +35,6 @@ const Activity = {
 		loading.show();
 		nodes.get("#main").innerHTML = null;
 		const { page } = utils.findPathName(window.location.pathname);
-		console.log(page)
 		if(page in docs) {
 			const docFile = await utils.getDocumentFile(docs[page].file);
 			if(docFile) Activity.renderDoc(page, docFile);
