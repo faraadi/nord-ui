@@ -75,4 +75,8 @@ Now visit next section and learn about colors and variables or head to the compo
 
 ## Dark Theme
 
-Nord UI comes with a fancy Dark Theme. if you are going to use that in your project, make sure you have read [Dark Theme Guide](/docs?page=dark-theme).
+Nord UI comes with a fancy Dark Theme. if you are going to use that in your project, make sure you have read [Dark Theme Guide](/docs/guides/dark-theme).
+
+## Right To Left Languages
+
+We Have full support fot Right To Left Languages. checkout [Right To Left Guide](/docs/guides/rtl) for more details.

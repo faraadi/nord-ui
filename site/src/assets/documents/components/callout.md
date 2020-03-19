@@ -7,6 +7,7 @@ Callout can highlight messages and important content and give it the user's atte
 Import following style(s) to include `callout` styles in your app.
 
 - Base: `nord-ui/dist/callout.css`
+- Base - RTL: `nord-ui/dist/callout.rtl.css`
 - Dark Theme: `nord-ui/dist/callout.dark.css`
 
 ## Basic Style

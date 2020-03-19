@@ -8,6 +8,7 @@ Forms consists a variety of elements. in addition to generic form elements, we p
 Import following style(s) to include `form` styles in your app.
 
 - Base: `nord-ui/dist/form.css`
+- Base - RTL: `nord-ui/dist/form.rtl.css`
 - Dark Theme: `nord-ui/dist/form.dark.css`
 - Custom Checkbox: `nord-ui/dist/checkbox.css`
 - Custom Checkbox Dark Theme: `nord-ui/dist/checkbox.dark.css`

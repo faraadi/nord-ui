@@ -8,6 +8,7 @@ it's lightweight and has minimum impact on your bundle size, see [Bundle Phobia 
 ## Features
 
 - Built-in Dark Theme :waxing_crescent_moon:
+- RTL Support
 - Lightweight and Modular
 - Built for Modern Browsers
 - Easy Customization
