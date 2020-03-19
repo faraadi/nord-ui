@@ -26,5 +26,48 @@ Altough components created using CSS, some of them need javascript functionality
 
 Nord UI is built for modern web apps and tries to keep code base small and easily customizable. to achieve this goal, it makes heavy use of Modern CSS features like Flexbox and Custom properties. therefore, old browsers (like IE 11) are not supported at all and most components fail to display properly on them.
 
-So if you're going to add Nord UI to your project, you may consider [Caniuse]() browser support statistics for minimum support:
+So if you're going to add Nord UI to your project, you may consider [Caniuse](https://caniuse.com/#feat=css-variables) browser support statistics for minimum support:
 
+<table class="table">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Global support</th>
+			<th>Chrome Desktop</th>
+			<th>Firefox Desktop</th>
+			<th>Opera Desktop</th>
+			<th>Safari</th>
+			<th>Edge</th>
+			<th>IE</th>
+			<th>Chrome Android</th>
+			<th>Safari IOS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr></tr>
+		<tr>
+			<td>Custom Properties</td>
+			<td>94%</td>
+			<td>49</td>
+			<td>31</td>
+			<td>36</td>
+			<td>9.1</td>
+			<td>16</td>
+			<td>-</td>
+			<td>80</td>
+			<td>9.3</td>
+		</tr>
+		<tr>
+			<td>Flexbox</td>
+			<td>96%</td>
+			<td>29</td>
+			<td>28</td>
+			<td>17</td>
+			<td>9</td>
+			<td>12</td>
+			<td>-</td>
+			<td>80</td>
+			<td>9</td>
+		</tr>
+	</tbody>
+</table>

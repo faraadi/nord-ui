@@ -33,6 +33,13 @@ footer {
 footer span {
 	font-size: 0.8em
 }
+footer span.heart {
+	vertical-align: middle;
+    color: var(--nord11);
+    font-size: 1.5em;
+    margin: 0 3px
+}
+
 @media only screen and (max-width: 600px) {
 	main {
 		height: unset;
