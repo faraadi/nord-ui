@@ -106,4 +106,21 @@ body:not(.dark) .documentation code.inline {
 	.documentation {
 		padding: 10px;
 	}
+	.documentation h1 {
+		margin-top: 0;
+		margin-bottom: 0.5em;
+		font-size: 2.5em;
+	}
+	.documentation h2 {
+		font-size: 1.7rem;
+	}
+	.documentation h3 {
+		font-size: 1.2rem
+	}
+	.documentation ul {
+		padding-inline-start: 15px;
+	}
+	.documentation p {
+		line-height: 1.6
+	}
 }
