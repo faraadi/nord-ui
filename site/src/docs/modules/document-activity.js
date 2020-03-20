@@ -2,6 +2,7 @@ import { markdownConverter, Prism } from './index.js';
 import { clipboard } from 'modules';
 import nodes from './nodes-container.js';
 import loading from './loading-activity.js';
+import mobileMenu from './mobile-menu-activity.js';
 import utils from './utils';
 import docs from 'assets/documents';
 
@@ -21,6 +22,7 @@ const Activity = {
 		Activity.checkBrowser();
 		Activity.goToDoc();
 		window.requestIdleCallback(Activity.themeToggler);
+		if(Activity.isMobile) window.requestIdleCallback(mobileMenu.init);
 		window.onpopstate = Activity.onHistoryChange;
 	},
 
@@ -33,6 +35,7 @@ const Activity = {
 
 	async goToDoc() {
 		loading.show();
+		if(Activity.isMobile) mobileMenu.close();
 		nodes.get("#main").innerHTML = null;
 		const { page } = utils.findPathName(window.location.pathname);
 		if(page in docs) {

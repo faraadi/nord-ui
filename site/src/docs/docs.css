@@ -36,7 +36,6 @@ main {
 }
 header .nav-container {
 	list-style: none;
-	display: inline-block;
 	margin: 0 0 0 20px;
 	padding: 0;
 }
@@ -150,4 +149,17 @@ body:not(.dark) .doc-link.active {
 }
 body:not(.dark) input:checked + .doc-category-title {
 	color: var(--nord0)
+}
+
+@media only screen and (max-width: 1279px) {
+    .leftbar {
+    	display: none
+    }
+}
+
+.leftbar.mobile-open {
+	width: 100%;
+	z-index: 100;
+	display: block;
+	background-color: var(--nord-deep-dark);
 }

@@ -33,18 +33,18 @@
 <body class="dark">
 	<header>
 		<div class="row justify-center align-center">
-			<div class="col xs-8 md-8">
+			<div class="col xs-4 md-8">
 				<div class="row align-center">
 					<a href="." title="Nord UI">
 						<img class="logo" src="/images/logo-minimal.svg" alt="Nord UI Logo">
 					</a>
-					<ul class="nav-container lg-down-hide">
+					<ul class="nav-container md-down-hide">
 						<li><a href=".">Home</a></li>
 						<li><a href="/docs">Documentation</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="col xs-4 md-4 text-right">
+			<div class="col xs-8 md-4 text-right">
 				<a href="https://github.com/faraadi/nord-ui" class="header-link" title="GitHub" target="_blank" rel='noreferrer noopener'>
 					<svg fill='white' width='25' role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<title>GitHub</title>
@@ -56,14 +56,18 @@
 						<path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
 					</svg>
 				</a>
+				<a href="#menu-toggler" class="header-link lg-up-hide mobile-menu-toggler">
+					<svg fill='white' width='25' viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+					</svg>
+				</a>
 			</div>
 		</div>
 	</header>
 	<main>
 		<div class="wrapper row">
-			<div class="col lg-2 lg-down-hide">
+			<div class="col lg-2">
 				<aside class="leftbar">
-					
 					<div class="collapse">
 						<input class="collapse-input" type="checkbox" id='getting-started-toggler'>
 						<label class="doc-category-title collapse-label" for='getting-started-toggler'>Getting Started</label>
@@ -145,7 +149,7 @@
 				</article>
 				<span class="spinner primary large docs-loading"></span>
 			</div>	
-			<div class="col lg-2 lg-down-hide">
+			<div class="col lg-2 md-down-hide">
 				<aside class="rightbar">
 					<a href="#" class="doc-edit-link text-primary" target="_blank" rel="noopener nofollow">edit this page</a>
 				</aside>
