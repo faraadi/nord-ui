@@ -1,12 +1,12 @@
 # Right To Left
 
-Most parts of Nord UI, are made without direction in mind. so you have both rtl and ltr support out of the box for many components. but there are somw exceptions like `callout` that need direction specific style to display properly.
+Most parts of Nord UI are made without direction specific styles. you have both RTL and LTR support out of the box for many components. but there are some exceptions like `callout` that need direction specific style to display properly.
 
-Nord UI comes with ltr direction by default, but it also fully supports rtl. follow these steps to change direction:
+Tough Nord UI comes with LTR direction by default, but also fully supports RTL. follow these steps to change direction:
 
 ## Change Document Direction
 
-Whether with `html` or `css`, you need to change document's direction first:
+Whether with `html` or `css`, you need to change document's direction first. using `html` will looks like:
 
 ```html
 <body dir='rtl'>
@@ -45,7 +45,7 @@ import 'nord-ui/dist/callout.rtl.css';
 ```html
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/nord-ui/dist/nord.rtl.min.css">
 ```
-
+<br>
 Please note that not all the components require RTL styles. just a few of them have direction specific styles.
 
 To check whether a component has RTL styles, head to `Import Path` section in component's documents and look for `Base - RTL` path.
