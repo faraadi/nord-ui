@@ -11,7 +11,8 @@ module.exports = {
 	entry: {
 		commons: path.resolve(srcPath, "commons/index.js"),
 		main: path.resolve(srcPath, "index.js"),
-		docs: path.resolve(srcPath, "docs/index.js")
+		docs: path.resolve(srcPath, "docs/index.js"),
+		faq: path.resolve(srcPath, "faq/index.js"),
 	},
 	resolve: {
 		alias: {
@@ -29,7 +30,7 @@ module.exports = {
 		clientLogLevel: "silent",
 		historyApiFallback: {
 			rewrites: [
-			  { from: "docs/*", to: '/docs' }
+			{ from: "docs/*", to: '/docs' }
 			]
 		},
 		watchContentBase: true,
@@ -73,6 +74,14 @@ module.exports = {
 			'PUBLIC_URL': process.env.PUBLIC_URL || "docs"
 		},
 		filename: "docs/index.html"
+	}),
+	new HtmlWebpackPlugin({
+		template: path.resolve(rootPath, 'src', "faq/index.html"),
+		chunks: ["commons", "faq"],
+		templateParameters: {
+			'PUBLIC_URL': process.env.PUBLIC_URL || "faq"
+		},
+		filename: "faq/index.html"
 	}),
 	new DuplicatePackageCheckerPlugin(),
 	],

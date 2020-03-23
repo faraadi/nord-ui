@@ -15,6 +15,7 @@ module.exports = {
 	entry: {
 		main: path.resolve(srcPath, "index.js"),
 		docs: path.resolve(srcPath, "docs/index.js"),
+		faq: path.resolve(srcPath, "faq/index.js"),
 		commons: path.resolve(srcPath, "commons/index.js")
 	},
 	resolve: {
@@ -32,6 +33,7 @@ module.exports = {
 				case "commons": 
 				case "main": return '[name].[contenthash].js'
 				case "docs": return 'docs/[name].[contenthash].js'
+				case "faq"L return 'faq/[name].[contenthash].js'
 			}
 		},
 		chunkFilename: '[name].[id].[ext]'
@@ -75,6 +77,7 @@ module.exports = {
 				case "commons": 
 				case "main": return '[name].[hash].css'
 				case "docs": return 'docs/[name].[hash].css'
+				case "faq": return 'faq/[name].[hash].css'
 			}
 		},
 		chunkFilename: '[id].[hash].css',
@@ -93,6 +96,14 @@ module.exports = {
 			'PUBLIC_URL': process.env.PUBLIC_URL || "/docs"
 		},
 		filename: "docs/index.html"
+	}),
+	new HtmlWebpackPlugin({
+		template: path.resolve(rootPath, 'src', "faq/index.html"),
+		chunks: ["faq", "commons"],
+		templateParameters: {
+			'PUBLIC_URL': process.env.PUBLIC_URL || "/faq"
+		},
+		filename: "faq/index.html"
 	}),
 	new DuplicatePackageCheckerPlugin(),
 	new CopyPlugin([

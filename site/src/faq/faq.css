@@ -1,0 +1,152 @@
+header {
+	height: 60px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%; 
+	background-color: var(--nord0);
+	padding: 0 15px
+}
+header > div {
+	height: 100%
+}
+header .logo {
+	max-width: 2em;
+	padding: 5px;
+}
+main {
+	margin-top: 60px
+}
+main {
+	height: calc(100% - 60px)
+}
+/*.wrapper, .docs-container {
+	height: 100%;
+}
+.docs-container {
+	position: relative;
+}
+.docs-loading {
+	position: absolute;
+	top: calc(50% - 29px);
+	right: calc(50% - 29px);
+}
+.docs-loading.hide {
+	display: none !important;
+}*/
+header .nav-container {
+	list-style: none;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+header .nav-container li {
+	float: left
+}
+header .nav-container a {
+	color: white;
+	padding: 5px 10px
+}
+header .header-link {
+	padding: 0 10px;
+	width: 35px
+}
+/*.leftbar {
+	padding: 15px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-top: 50px;
+	bottom: 0;
+	overflow-y: auto;
+	min-width: 300px
+}
+.leftbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+.doc-category-title {
+	color: var(--nord3);
+	font-size: 1em;
+	padding: 10px 0;
+	display: block;
+	transition: color 0.3s
+}
+input:checked + .doc-category-title {
+	color: var(--nord4);
+}
+.leftbar ul li {
+	display: contents;
+}
+.doc-link {
+	display: block;
+	margin-left: 10px;
+	padding: 10px 0;
+	color: var(--nord7);
+	transition:  0.3s;
+}
+.doc-link.active {
+	background-color: var(--nord0);
+	border-radius: 3px;
+	padding-left: 10px;
+	margin-left: 5px
+}
+.rightbar {
+	position: relative;
+}
+.outline-container {
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding-right: 15px
+}
+.outline-list {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+.outline-link {
+	color: var(--nord7);
+	transition: 0.3s;
+	padding: 8px 0;
+	display: inline-block;
+	font-size: 0.8em;
+	line-height: 1.2;
+}
+.outline-link:hover {
+	color: var(--nord7);
+}
+.outline-link.h2 {
+	padding-right: 0
+}
+.outline-link.h3 {
+	padding-left: 15px;
+}
+.outline-link.h4 {
+
+}
+.doc-edit-link {
+	position: fixed;
+	bottom: 20px;
+	border-bottom: 1px dotted var(--nord7);
+}*/
+
+body:not(.dark) {
+	color: var(--nord1)
+}
+body:not(.dark) header {
+	background-color: var(--nord3)
+}
+/*body:not(.dark) .outline-link, body:not(.dark) .doc-edit-link {
+	color: var(--nord3)
+}
+body:not(.dark) .doc-link {
+	color: var(--nord3)
+}
+body:not(.dark) .doc-link.active {
+	background-color: var(--nord7-pale);
+	color: var(--nord1)
+}
+body:not(.dark) input:checked + .doc-category-title {
+	color: var(--nord0)
+}*/

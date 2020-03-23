@@ -1,14 +1,14 @@
-import nodes from './nodes-container.js';
+import { Nodes } from 'modules';
 
 export default {
 	init() {
-		const btn = nodes.get(".mobile-menu-toggler");
+		const btn = Nodes.get(".mobile-menu-toggler");
 		btn.onclick = function(e) {
 			e.preventDefault();
-			nodes.get("aside.leftbar").classList.toggle("mobile-open");
+			Nodes.get("aside.leftbar").classList.toggle("mobile-open");
 		}
 	},
 	close() {
-		nodes.get("aside.leftbar").classList.remove("mobile-open");
+		Nodes.get("aside.leftbar").classList.remove("mobile-open");
 	}
 }

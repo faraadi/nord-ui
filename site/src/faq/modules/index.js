@@ -1,0 +1,1 @@
+export { default as FAQActivity } from './faq-activity.js';

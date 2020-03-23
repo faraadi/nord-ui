@@ -79,4 +79,4 @@ Nord UI comes with a fancy Dark Theme. if you are going to use that in your proj
 
 ## Right To Left Languages
 
-We Have full support fot Right To Left Languages. checkout [Right To Left Guide](/docs/guides/rtl) for more details.
+We Have full support for Right To Left Languages. checkout [Right To Left Guide](/docs/guides/rtl) for more details.

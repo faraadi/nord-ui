@@ -1,10 +1,12 @@
-import nodes from './nodes-container.js';
+import { Nodes } from 'modules';
+
 const loadingQuery = ".docs-loading";
+
 export default {
 	show() {
-		nodes.get(loadingQuery).classList.remove("hide");
+		Nodes.get(loadingQuery).classList.remove("hide");
 	},
 	hide() {
-		nodes.get(loadingQuery).classList.add("hide");
+		Nodes.get(loadingQuery).classList.add("hide");
 	}
 }

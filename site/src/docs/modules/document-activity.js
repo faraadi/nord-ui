@@ -1,6 +1,5 @@
 import { markdownConverter, Prism } from './index.js';
-import { clipboard } from 'modules';
-import nodes from './nodes-container.js';
+import { clipboard, Nodes, ThemeActivity } from 'modules';
 import loading from './loading-activity.js';
 import mobileMenu from './mobile-menu-activity.js';
 import utils from './utils';
@@ -14,14 +13,14 @@ const Activity = {
 	isMobile: false,
 
 	init() {
-		const links = nodes.get(".doc-link", true);
+		const links = Nodes.get(".doc-link", true);
 		if(links) {
 			links.forEach( link => link.onclick = Activity.onLinkClick);
 			Activity.docLinks = links;
 		}
 		Activity.checkBrowser();
 		Activity.goToDoc();
-		window.requestIdleCallback(Activity.themeToggler);
+		window.requestIdleCallback(ThemeActivity.init);
 		if(Activity.isMobile) window.requestIdleCallback(mobileMenu.init);
 		window.onpopstate = Activity.onHistoryChange;
 	},
@@ -36,7 +35,7 @@ const Activity = {
 	async goToDoc() {
 		loading.show();
 		if(Activity.isMobile) mobileMenu.close();
-		nodes.get("#main").innerHTML = null;
+		Nodes.get("#main").innerHTML = null;
 		const { page } = utils.findPathName(window.location.pathname);
 		if(page in docs) {
 			const docFile = await utils.getDocumentFile(docs[page].file);
@@ -47,7 +46,7 @@ const Activity = {
 
 	renderDoc(docName, docFile) {
 		Activity.renderPreProcess();
-		const mainElement = nodes.get("#main");
+		const mainElement = Nodes.get("#main");
 		mainElement.innerHTML = markdownConverter(docFile);
 		Activity.renderPostProcess(docName);
 		loading.hide();
@@ -63,13 +62,13 @@ const Activity = {
 	},
 
 	renderPreProcess() {
-		const temporaryScriptsContainer = nodes.get(".temporary-scripts-container");
+		const temporaryScriptsContainer = Nodes.get(".temporary-scripts-container");
 		for(let child of temporaryScriptsContainer.children) child.remove();	
 	},
 
 	activateDocLink() {
 		if(Activity.previousActiveLink) Activity.previousActiveLink.classList.remove("active");
-		const docLinks = nodes.get(".doc-link", true);
+		const docLinks = Nodes.get(".doc-link", true);
 		for(let docLink of docLinks) {
 			if(docLink.href === window.location.href) {
 				docLink.classList.add("active");
@@ -80,7 +79,7 @@ const Activity = {
 	},
 
 	addCopyButton() {
-		nodes.get("pre[class*='language-']", true, true).forEach(function(el) {
+		Nodes.get("pre[class*='language-']", true, true).forEach(function(el) {
 			const button = document.createElement("button");
 			button.className = "copy-btn";
 			button.innerText = "copy";
@@ -94,8 +93,8 @@ const Activity = {
 	},
 
 	generateOutlines() {
-		const headings = nodes.get(".documentation>h2, .documentation>h3, .documentation>h4", true, true);
-		const rightbar = nodes.get(".rightbar");
+		const headings = Nodes.get(".documentation>h2, .documentation>h3, .documentation>h4", true, true);
+		const rightbar = Nodes.get(".rightbar");
 		// rightbar.innerHTML = null;
 		if(headings && headings.length) {
 			const outlineContainer = document.createElement("div");
@@ -121,26 +120,15 @@ const Activity = {
 	},
 
 	updateDocEditLink(docName, gitPath) {
-		const editLink = nodes.get(".doc-edit-link");
+		const editLink = Nodes.get(".doc-edit-link");
 		editLink.href = gitPath;
 		editLink.innerText = `edit ${docName} page`;
-	},
-
-	themeToggler() {
-		const themeTogglerBtn = nodes.get(".toggle-theme-btn")
-		themeTogglerBtn.onclick = function(e) {
-			e.preventDefault();
-			document.body.classList.contains("dark")
-				? themeTogglerBtn.innerHTML = darkIcon
-				: themeTogglerBtn.innerHTML = lightIcon;
-			document.body.classList.toggle("dark");
-		}
 	},
 
 	loadDocumentScripts(docName) {
 		const { scripts } = docs[docName];
 		if(scripts) {
-			const temporaryScriptsContainer = nodes.get(".temporary-scripts-container");
+			const temporaryScriptsContainer = Nodes.get(".temporary-scripts-container");
 			for(let scriptPath of scripts) {
 				const script = document.createElement("script");
 				script.src = scriptPath;
@@ -163,6 +151,3 @@ function render404() {
 }
 
 export default Activity;
-
-const darkIcon = `<svg fill='white' width='25' viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>`;
-const lightIcon = `<svg fill='white' width='25' viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>`;
