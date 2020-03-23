@@ -37,7 +37,7 @@ A Basic form for example:
 				<label class="form-label" for="example-password">password</label>
 				<input class="form-control" type="password" name="user-password" id="example-password">
 			</div>
-			<button class="btn primary">Submit</button>
+			<button class="btn primary" onclick="return false">Submit</button>
 		</form>
 	</div>
 	<div class='source'>
