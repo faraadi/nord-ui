@@ -22,13 +22,13 @@ check documentations: [https://nordui.netlify.com](https://nordui.netlify.com)
 
 install using NPM:
 
-````bash
+````sh
 npm install nord-ui
 ````
 
 or Yarn:
 
-```
+```sh
 yarn add nord-ui
 ```
 
