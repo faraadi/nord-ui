@@ -1,5 +1,5 @@
 import { markdownConverter, Prism } from './index.js';
-import { clipboard, Nodes, ThemeActivity } from 'modules';
+import { clipboard, Nodes, ThemeActivity, outlineGenerator } from 'modules';
 import loading from './loading-activity.js';
 import mobileMenu from './mobile-menu-activity.js';
 import utils from './utils';
@@ -57,7 +57,7 @@ const Activity = {
 		window.requestIdleCallback(() => Activity.loadDocumentScripts(docName));
 		window.requestIdleCallback(Prism.highlightAll);
 		window.requestIdleCallback(Activity.addCopyButton);
-		if(!Activity.isMobile) window.requestIdleCallback(Activity.generateOutlines);
+		if(!Activity.isMobile) window.requestIdleCallback(() => outlineGenerator(".documentation>h2, .documentation>h3, .documentation>h4"));
 		Activity.updateDocEditLink(docName, docs[docName].gitPath);
 	},
 
@@ -90,33 +90,6 @@ const Activity = {
 			});
 			el.append(button);
 		});
-	},
-
-	generateOutlines() {
-		const headings = Nodes.get(".documentation>h2, .documentation>h3, .documentation>h4", true, true);
-		const rightbar = Nodes.get(".rightbar");
-		// rightbar.innerHTML = null;
-		if(headings && headings.length) {
-			const outlineContainer = document.createElement("div");
-			outlineContainer.className = "outline-container";
-
-			const outlineList = document.createElement("ul");
-			outlineList.className = "outline-list";
-
-			for(let heading of headings) {
-				const outline = document.createElement("a");
-				outline.className = "outline-link " +  String(heading.nodeName).toLowerCase();
-				outline.innerText = heading.innerText;
-				outline.href = window.location.href + "#" + heading.id;
-				const li = document.createElement("li");
-				li.append(outline);
-				outlineList.append(li);
-			}
-			outlineContainer.append(outlineList);
-			if(rightbar.childElementCount > 1) rightbar.removeChild(rightbar.children[0]);
-			outlineContainer.style.width = rightbar.parentNode.clientWidth + "px";
-			rightbar.prepend(outlineContainer);
-		}
 	},
 
 	updateDocEditLink(docName, gitPath) {
