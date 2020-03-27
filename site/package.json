@@ -32,7 +32,7 @@
 		"serve": "serve -s dist"
 	},
 	"dependencies": {
-		"nord-ui": "^0.9.0",
+		"nord-ui": "^0.10.1",
 		"prismjs": "^1.19.0",
 		"showdown": "^1.9.1"
 	}

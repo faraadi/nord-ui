@@ -80,6 +80,9 @@ A more useful example could be like:
 	</div>
 </div>
 
+## Z Index
+`modal` uses `position:fixed` alongside `z-index:10` to stay above other elements. if you have other elements with `position:fixed`, make sure your modal have higher `z-index` than others.
+
 <style type="text/css">
 	.modal-container .btn {
 		margin: 0 2px
