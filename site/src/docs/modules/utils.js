@@ -5,8 +5,8 @@ export default {
 	},
 	findPathName(path) {
 		if (path.startsWith("/")) path = path.slice(1);
-		const [,section, page] = path.split("/");
-		if(!section || !page) return { page: "index" };
+		const [, section, page] = path.split("/");
+		if (!section || !page) return { page: "index" };
 		return { section, page };
 	},
 }

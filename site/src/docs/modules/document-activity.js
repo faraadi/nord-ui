@@ -3,7 +3,7 @@ import { clipboard, Nodes, ThemeActivity, outlineGenerator } from 'modules';
 import loading from './loading-activity';
 import mobileMenu from './mobile-menu-activity';
 import utils from './utils';
-import docs from 'assets/documents';
+import docsModel from 'assets/documents';
 
 const Activity = {
 	docLinks: null,
@@ -14,14 +14,14 @@ const Activity = {
 
 	init() {
 		const links = Nodes.get(".doc-link", true);
-		if(links) {
-			links.forEach( link => link.onclick = Activity.onLinkClick);
+		if (links) {
+			links.forEach(link => link.onclick = Activity.onLinkClick);
 			Activity.docLinks = links;
 		}
 		Activity.checkBrowser();
 		Activity.goToDoc();
 		window.requestIdleCallback(ThemeActivity.init);
-		if(Activity.isMobile) window.requestIdleCallback(mobileMenu.init);
+		if (Activity.isMobile) window.requestIdleCallback(mobileMenu.init);
 		window.onpopstate = Activity.onHistoryChange;
 	},
 
@@ -34,12 +34,12 @@ const Activity = {
 
 	async goToDoc() {
 		loading.show();
-		if(Activity.isMobile) mobileMenu.close();
+		if (Activity.isMobile) mobileMenu.close();
 		Nodes.get("#main").innerHTML = null;
 		const { page } = utils.findPathName(window.location.pathname);
-		if(page in docs) {
-			const docFile = await utils.getDocumentFile(docs[page].file);
-			if(docFile) Activity.renderDoc(page, docFile);
+		if (page in docsModel) {
+			const docFile = await utils.getDocumentFile(docsModel[page].file);
+			if (docFile) Activity.renderDoc(page, docFile);
 		}
 		else render404();
 	},
@@ -57,20 +57,20 @@ const Activity = {
 		window.requestIdleCallback(() => Activity.loadDocumentScripts(docName));
 		window.requestIdleCallback(Prism.highlightAll);
 		window.requestIdleCallback(Activity.addCopyButton);
-		if(!Activity.isMobile) window.requestIdleCallback(() => outlineGenerator(".documentation>h2, .documentation>h3, .documentation>h4"));
-		Activity.updateDocEditLink(docName, docs[docName].gitPath);
+		if (!Activity.isMobile) window.requestIdleCallback(() => outlineGenerator(".documentation>h2, .documentation>h3, .documentation>h4"));
+		Activity.updateDocEditLink(docName, docsModel[docName].gitPath);
 	},
 
 	renderPreProcess() {
 		const temporaryScriptsContainer = Nodes.get(".temporary-scripts-container");
-		for(let child of temporaryScriptsContainer.children) child.remove();	
+		for (let child of temporaryScriptsContainer.children) child.remove();
 	},
 
 	activateDocLink() {
-		if(Activity.previousActiveLink) Activity.previousActiveLink.classList.remove("active");
+		if (Activity.previousActiveLink) Activity.previousActiveLink.classList.remove("active");
 		const docLinks = Nodes.get(".doc-link", true);
-		for(let docLink of docLinks) {
-			if(docLink.href === window.location.href) {
+		for (let docLink of docLinks) {
+			if (docLink.href === window.location.href) {
 				docLink.classList.add("active");
 				Activity.previousActiveLink = docLink;
 				break;
@@ -79,7 +79,7 @@ const Activity = {
 	},
 
 	addCopyButton() {
-		Nodes.get("pre[class*='language-']", true, true).forEach(function(el) {
+		Nodes.get("pre[class*='language-']", true, true).forEach(function (el) {
 			const button = document.createElement("button");
 			button.className = "copy-btn";
 			button.innerText = "copy";
@@ -99,10 +99,10 @@ const Activity = {
 	},
 
 	loadDocumentScripts(docName) {
-		const { scripts } = docs[docName];
-		if(scripts) {
+		const { scripts } = docsModel[docName];
+		if (scripts) {
 			const temporaryScriptsContainer = Nodes.get(".temporary-scripts-container");
-			for(let scriptPath of scripts) {
+			for (let scriptPath of scripts) {
 				const script = document.createElement("script");
 				script.src = scriptPath;
 				script.type = "text/javascript";
@@ -112,7 +112,7 @@ const Activity = {
 	},
 
 	checkBrowser() {
-		if(window.innerWidth < 1280) Activity.isMobile = true;
+		if (window.innerWidth < 1280) Activity.isMobile = true;
 	},
 
 	onHistoryChange(e) {
