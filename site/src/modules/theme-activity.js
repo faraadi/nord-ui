@@ -1,4 +1,4 @@
-import { Nodes } from './index.js';
+import { Nodes } from './index';
 
 const Activity = {
 	init() {

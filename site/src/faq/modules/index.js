@@ -1,1 +1,1 @@
-export { default as FAQActivity } from './faq-activity.js';
+export { default as FAQActivity } from './faq-activity';

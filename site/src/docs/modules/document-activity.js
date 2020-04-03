@@ -1,7 +1,7 @@
-import { markdownConverter, Prism } from './index.js';
+import { markdownConverter, Prism } from './index';
 import { clipboard, Nodes, ThemeActivity, outlineGenerator } from 'modules';
-import loading from './loading-activity.js';
-import mobileMenu from './mobile-menu-activity.js';
+import loading from './loading-activity';
+import mobileMenu from './mobile-menu-activity';
 import utils from './utils';
 import docs from 'assets/documents';
 
