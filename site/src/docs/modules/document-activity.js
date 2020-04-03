@@ -1,28 +1,23 @@
-import { markdownConverter, Prism, BottomNavigation } from './index';
+import { markdownConverter, Prism, BottomNavigation, Loading, MobileMenu } from './index';
 import { clipboard, Nodes, ThemeActivity, outlineGenerator } from 'modules';
-import loading from './loading-activity';
-import mobileMenu from './mobile-menu-activity';
 import utils from './utils';
 import docsModel from 'assets/documents';
 
 const Activity = {
-	docLinks: null,
-
 	previousActiveLink: null,
 
 	isMobile: false,
 
 	init() {
 		const links = Nodes.get(".doc-link", true);
-		if (links) {
-			links.forEach(link => link.onclick = Activity.onLinkClick);
-			Activity.docLinks = links;
-		}
+
+		if (links) links.forEach(link => link.onclick = Activity.onLinkClick);
+
 		BottomNavigation.init(Activity.onLinkClick);
 		Activity.checkBrowser();
 		Activity.goToDoc();
 		window.requestIdleCallback(ThemeActivity.init);
-		if (Activity.isMobile) window.requestIdleCallback(mobileMenu.init);
+		if (Activity.isMobile) window.requestIdleCallback(MobileMenu.init);
 		window.onpopstate = Activity.onHistoryChange;
 	},
 
@@ -35,8 +30,8 @@ const Activity = {
 	},
 
 	async goToDoc() {
-		loading.show();
-		if (Activity.isMobile) mobileMenu.close();
+		Loading.show();
+		if (Activity.isMobile) MobileMenu.close();
 		Nodes.get("#main").innerHTML = null;
 		const { page } = utils.findPathName(window.location.pathname);
 		if (page in docsModel) {
@@ -51,14 +46,14 @@ const Activity = {
 		const mainElement = Nodes.get("#main");
 		mainElement.innerHTML = markdownConverter(docFile);
 		Activity.renderPostProcess(docName);
-		loading.hide();
+		Loading.hide();
 	},
 
 	renderPostProcess(docName) {
 		Activity.activateDocLink();
 		window.requestIdleCallback(() => Activity.loadDocumentScripts(docName));
-		window.requestIdleCallback(Prism.highlightAll);
 		window.requestIdleCallback(() => BottomNavigation.update(docName));
+		window.requestIdleCallback(Prism.highlightAll);
 		window.requestIdleCallback(Activity.addCopyButton);
 		if (!Activity.isMobile) window.requestIdleCallback(() => outlineGenerator(".documentation>h2, .documentation>h3, .documentation>h4"));
 		Activity.updateDocEditLink(docName, docsModel[docName].gitPath);
