@@ -27,12 +27,19 @@ main {
 	position: relative;
 	padding: 20px 30px 0 30px;
 }
-.docs-loading {
+.loading-container {
 	position: absolute;
-	top: calc(50% - 29px);
-	right: calc(50% - 29px);
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--nord-deep-dark)
+
 }
-.docs-loading.hide {
+.loading-container.hide {
 	display: none !important;
 }
 header .nav-container {
@@ -123,9 +130,6 @@ input:checked + .doc-category-title {
 .outline-link.h3 {
 	padding-left: 15px;
 }
-.outline-link.h4 {
-
-}
 .doc-edit-link {
 	position: fixed;
 	bottom: 20px;
@@ -175,6 +179,10 @@ body:not(.dark) .doc-link.active {
 body:not(.dark) input:checked + .doc-category-title {
 	color: var(--nord0)
 }
+body:not(.dark) .loading-container {
+	background-color: var(--nord6);
+}
+
 @media only screen and (max-width: 599px) {
 	.docs-container {
 		padding: 10px;

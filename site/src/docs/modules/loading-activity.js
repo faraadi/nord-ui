@@ -1,6 +1,6 @@
 import { Nodes } from 'modules';
 
-const loadingQuery = ".docs-loading";
+const loadingQuery = ".loading-container";
 
 export default {
 	show() {
