@@ -1,6 +1,5 @@
 .documentation {
-	padding: 20px 30px 0 30px;
-	margin-bottom: 200px
+	margin-bottom: 50px
 }
 .documentation h1:first-child {
 	margin-top: 0
@@ -103,9 +102,6 @@ body:not(.dark) .documentation code.inline {
 	background-color: var(--nord3)
 }
 @media only screen and (max-width: 599px) {
-	.documentation {
-		padding: 10px;
-	}
 	.documentation h1 {
 		margin-top: 0;
 		margin-bottom: 0.5em;

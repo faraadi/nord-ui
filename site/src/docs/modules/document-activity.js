@@ -1,4 +1,4 @@
-import { markdownConverter, Prism } from './index';
+import { markdownConverter, Prism, BottomNavigation } from './index';
 import { clipboard, Nodes, ThemeActivity, outlineGenerator } from 'modules';
 import loading from './loading-activity';
 import mobileMenu from './mobile-menu-activity';
@@ -18,6 +18,7 @@ const Activity = {
 			links.forEach(link => link.onclick = Activity.onLinkClick);
 			Activity.docLinks = links;
 		}
+		BottomNavigation.init(Activity.onLinkClick);
 		Activity.checkBrowser();
 		Activity.goToDoc();
 		window.requestIdleCallback(ThemeActivity.init);
@@ -30,6 +31,7 @@ const Activity = {
 		const pathname = utils.findPathName(e.target.pathname);
 		window.history.pushState({}, pathname, e.target.href);
 		Activity.goToDoc(pathname);
+		window.scroll(0,0);
 	},
 
 	async goToDoc() {
@@ -56,6 +58,7 @@ const Activity = {
 		Activity.activateDocLink();
 		window.requestIdleCallback(() => Activity.loadDocumentScripts(docName));
 		window.requestIdleCallback(Prism.highlightAll);
+		window.requestIdleCallback(() => BottomNavigation.update(docName));
 		window.requestIdleCallback(Activity.addCopyButton);
 		if (!Activity.isMobile) window.requestIdleCallback(() => outlineGenerator(".documentation>h2, .documentation>h3, .documentation>h4"));
 		Activity.updateDocEditLink(docName, docsModel[docName].gitPath);
