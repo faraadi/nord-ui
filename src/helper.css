@@ -7,6 +7,9 @@
 .no-margin {
 	margin: 0
 }
+.no-outline {
+	outline: none;
+}
 .text-left {
 	text-align: left
 }
@@ -18,4 +21,16 @@
 }
 .text-justify {
 	text-align: justify
+}
+.fill-height {
+	height: 100%;
+}
+.fill-wdith {
+	width: 100%;
+}
+.rtl {
+	direction: rtl;
+}
+.ltr {
+	direction: ltr;
 }
