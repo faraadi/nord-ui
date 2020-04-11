@@ -1,0 +1,13 @@
+{
+	"extends": "stylelint-config-standard",
+	"rules": {
+		"indentation": "tab",
+		"no-missing-end-of-source-newline": null
+	},
+	"ignoreFiles": [
+		"**/*.js",
+		"./site",
+		"./dist",
+		"./configs"
+	]
+}

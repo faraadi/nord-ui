@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const resolveSplittedEntries = require('./splitted-entries.js');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 const path = require('path');
 
 const rootPath = path.resolve(__dirname, "../");
@@ -88,9 +89,13 @@ const splittedBudlesConfig = {
             path: path.resolve(distPath) + "/chunks",
             filename: '[name].css',
             chunkFilename: '[id].css',
-            ignoreOrder: false
+			ignoreOrder: false
         }),
-        new FixStyleOnlyEntriesPlugin()
+		new FixStyleOnlyEntriesPlugin(),
+		new StylelintPlugin({
+			configFile: path.resolve(rootPath, ".stylelintrc"),
+			files: "src/*"
+		})
     ]
 };
 
