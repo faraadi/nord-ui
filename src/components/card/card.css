@@ -1,19 +1,20 @@
 .card {
-    border-radius: 4px;
-    background-color: white;
-    position: relative;
-    box-shadow: 0 2px 10px -5px var(--nord1-pale), 0 1px 12px -5px var(--nord1-pale), 0 1px 3px 0 var(--nord1-pale)
+	border-radius: 4px;
+	background-color: white;
+	position: relative;
+	box-shadow: 0 2px 10px -5px var(--nord1-pale), 0 1px 12px -5px var(--nord1-pale), 0 1px 3px 0 var(--nord1-pale);
 }
 
 .card.minimal {
-    box-shadow: none;
-    border: 1px solid rgba(46,52,64,0.3);
+	box-shadow: none;
+	border: 1px solid rgba(46, 52, 64, 0.3);
 }
 
 .card-body {
-    padding: 15px;
+	padding: 15px;
 }
 
-.card-thumb img, .card-thumb {
-	border-radius: 4px 4px 0 0 ;
+.card-thumb img,
+.card-thumb {
+	border-radius: 4px 4px 0 0;
 }

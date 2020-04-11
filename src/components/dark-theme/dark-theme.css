@@ -2,5 +2,5 @@
 	background-color: var(--nord-deep-dark);
 	color: var(--nord6);
 	transition-duration: var(--default--transition);
-	transition-property: color, background-color
+	transition-property: color, background-color;
 }

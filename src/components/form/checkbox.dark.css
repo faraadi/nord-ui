@@ -2,6 +2,7 @@
 	border: 2px solid var(--nord3);
 }
 
-.dark .custom-checkbox:disabled, .custom-checkbox.disabled {
+.dark .custom-checkbox:disabled,
+.custom-checkbox.disabled {
 	border-color: var(--nord3-pale);
 }

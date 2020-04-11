@@ -2,7 +2,9 @@
 	"extends": "stylelint-config-standard",
 	"rules": {
 		"indentation": "tab",
-		"no-missing-end-of-source-newline": null
+		"no-missing-end-of-source-newline": null,
+		"comment-empty-line-before": "never",
+		"color-hex-case": null
 	},
 	"ignoreFiles": [
 		"**/*.js",

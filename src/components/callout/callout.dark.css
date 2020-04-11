@@ -1,13 +1,15 @@
-.dark .callout:not(.primary):not(.secondary):not(.danger):not(.warning):not(.success):not(.info):not(.minimal) {
-	background-color: var(--nord3-pale);
-}
 .dark .callout {
 	color: var(--nord4);
 }
+
+.dark .callout:not(.primary):not(.secondary):not(.danger):not(.warning):not(.success):not(.info):not(.minimal) {
+	background-color: var(--nord3-pale);
+}
+
 .dark .callout.secondary .callout-title {
 	color: var(--nord3);
 }
 
 .dark .callout.minimal {
-	background-color: var(--nord3-pale)
+	background-color: var(--nord3-pale);
 }

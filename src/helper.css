@@ -1,36 +1,47 @@
 .no-border {
-	border: none
+	border: none;
 }
+
 .no-padding {
-	padding: 0
+	padding: 0;
 }
+
 .no-margin {
-	margin: 0
+	margin: 0;
 }
+
 .no-outline {
 	outline: none;
 }
+
 .text-left {
-	text-align: left
+	text-align: left;
 }
+
 .text-right {
-	text-align: right
+	text-align: right;
 }
+
 .text-center {
-	text-align: center
+	text-align: center;
 }
+
 .text-justify {
-	text-align: justify
+	text-align: justify;
 }
+
 .fill-height {
 	height: 100%;
 }
+
 .fill-wdith {
 	width: 100%;
 }
+
 .rtl {
 	direction: rtl;
 }
+
 .ltr {
 	direction: ltr;
 }

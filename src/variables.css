@@ -1,53 +1,49 @@
 :root {
-    --nord-deep-dark: #242931;
-    /*  polar night */
-    --nord0: #2E3440;
-    --nord0-pale: rgba(46,52,64, 0.3);
-    --nord1: #3B4252;
-    --nord1-pale: rgba(59,66,82, 0.3);
-    --nord2: #434C5E;
-    --nord2-pale: rgba(67,76,94, 0.3);
-    --nord3: #4C566A;
-    --nord3-pale: rgba(76,86,106, 0.3);
-    /* snow storm */
-    --nord4: #D8DEE9;
-    --nord4-pale: rgba(216,222,232, 0.3);
-    --nord5: #E5E9F0;
-    --nord5-pale: rgba(229,233,240, 0.3);
-    --nord6: #ECEFF4;
-    --nord6-pale: rgba(236,239,244, 0.3);
-    /* frost */
-    --nord7: #8FBCBB;
-    --nord7-pale: rgba(143,188,187,0.3);
-    --nord8: #88C0D0;
-    --nord9: #81A1C1;
-    --nord10: #5E81AC;
-    --nord10-pale: rgba(94,129,172,0.3);
-    /* aurora */
-    --nord11: #BF616A;
-    --nord11-pale: rgba(191,97,106, 0.3);
-    --nord12: #D08770;
-    --nord12-pale: rgba(208,135,112, 0.3);
-    --nord13: #EBCB8B;
-    --nord13-pale: rgba(235,203,139, 0.3);
-    --nord14: #A3BE8C;
-    --nord14-pale: rgba(163,190,140, 0.3);
-    --nord15: #B48EAD;
-    --nord15-pale: rgba(180,140,173, 0.3);
-
-    --default--transition: 0.3s;
-
-    --tooltip-offset: 5px;
-    --callout-side-offset: 2em;
-    --form-group-bottom-margin: 10px;
-    --form-label-bottom-margin: 5px;
-
-    --gutter-tiny: 8px;
-    --gutter-medium: 16px;
-    --gutter-large: 24px;
-    --gutter-xlarge: 36px;
-
-    --spinner-large-size: 50px;
-    --spinner-normal-size: 35px;
-    --spinner-small-size: 20px;
+	--nord-deep-dark: #242931;
+	/*  polar night */
+	--nord0: #2E3440;
+	--nord0-pale: rgba(46, 52, 64, 0.3);
+	--nord1: #3B4252;
+	--nord1-pale: rgba(59, 66, 82, 0.3);
+	--nord2: #434C5E;
+	--nord2-pale: rgba(67, 76, 94, 0.3);
+	--nord3: #4C566A;
+	--nord3-pale: rgba(76, 86, 106, 0.3);
+	/* snow storm */
+	--nord4: #D8DEE9;
+	--nord4-pale: rgba(216, 222, 232, 0.3);
+	--nord5: #E5E9F0;
+	--nord5-pale: rgba(229, 233, 240, 0.3);
+	--nord6: #ECEFF4;
+	--nord6-pale: rgba(236, 239, 244, 0.3);
+	/* frost */
+	--nord7: #8FBCBB;
+	--nord7-pale: rgba(143, 188, 187, 0.3);
+	--nord8: #88C0D0;
+	--nord9: #81A1C1;
+	--nord10: #5E81AC;
+	--nord10-pale: rgba(94, 129, 172, 0.3);
+	/* aurora */
+	--nord11: #BF616A;
+	--nord11-pale: rgba(191, 97, 106, 0.3);
+	--nord12: #D08770;
+	--nord12-pale: rgba(208, 135, 112, 0.3);
+	--nord13: #EBCB8B;
+	--nord13-pale: rgba(235, 203, 139, 0.3);
+	--nord14: #A3BE8C;
+	--nord14-pale: rgba(163, 190, 140, 0.3);
+	--nord15: #B48EAD;
+	--nord15-pale: rgba(180, 140, 173, 0.3);
+	--default--transition: 0.3s;
+	--tooltip-offset: 5px;
+	--callout-side-offset: 2em;
+	--form-group-bottom-margin: 10px;
+	--form-label-bottom-margin: 5px;
+	--gutter-tiny: 8px;
+	--gutter-medium: 16px;
+	--gutter-large: 24px;
+	--gutter-xlarge: 36px;
+	--spinner-large-size: 50px;
+	--spinner-normal-size: 35px;
+	--spinner-small-size: 20px;
 }

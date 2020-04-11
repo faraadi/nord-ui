@@ -1,4 +1,4 @@
-@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
 	.custom-checkbox {
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -18,7 +18,8 @@
 		-moz-margin-end: 5px;
 		margin-inline-end: 5px;
 	}
-	.custom-checkbox:after {
+
+	.custom-checkbox::after {
 		content: "";
 		position: absolute;
 		top: 20%;
@@ -31,29 +32,35 @@
 		transition-duration: 0.1s;
 		transition-property: border-color, transform;
 	}
+
 	.custom-checkbox-label {
 		vertical-align: middle;
 		cursor: pointer;
 		font-size: 1.1rem;
 	}
+
 	.custom-checkbox:checked {
 		border-radius: 6px;
-		background-color: var(--nord7)
+		background-color: var(--nord7);
 	}
-	.custom-checkbox:checked:after {
+
+	.custom-checkbox:checked::after {
 		border-color: white;
-		transform: rotate(45deg) translate(-15%,-10%);
+		transform: rotate(45deg) translate(-15%, -10%);
 	}
 
 	.custom-checkbox:focus {
-		box-shadow: 0 0 0 2px var(--nord7)
+		box-shadow: 0 0 0 2px var(--nord7);
 	}
 
-	.custom-checkbox:disabled, .custom-checkbox.disabled {
+	.custom-checkbox:disabled,
+	.custom-checkbox.disabled {
 		cursor: not-allowed;
 		border-color: var(--nord1-pale);
 	}
-	.custom-checkbox:disabled:checked, .custom-checkbox.disabled:checked {
+
+	.custom-checkbox:disabled:checked,
+	.custom-checkbox.disabled:checked {
 		background-color: var(--nord7-pale);
 	}
 }

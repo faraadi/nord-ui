@@ -1,104 +1,147 @@
 .text-deep-dark {
-	color: #242933
+	color: #242933;
 }
+
 .text-nord0 {
 	color: var(--nord0);
 }
-.text-nord1,.text-secondary {
+
+.text-nord1,
+.text-secondary {
 	color: var(--nord1);
 }
+
 .text-nord2 {
 	color: var(--nord2);
 }
+
 .text-nord3 {
 	color: var(--nord3);
 }
+
 .text-nord4 {
 	color: var(--nord4);
 }
+
 .text-nord5 {
 	color: var(--nord5);
 }
+
 .text-nord6 {
 	color: var(--nord6);
 }
-.text-nord7,.text-primary {
+
+.text-nord7,
+.text-primary {
 	color: var(--nord7);
 }
+
 .text-nord8 {
 	color: var(--nord8);
 }
+
 .text-nord9 {
 	color: var(--nord9);
 }
-.text-nord10,.text-info {
+
+.text-nord10,
+.text-info {
 	color: var(--nord10);
 }
-.text-nord11,.text-danger {
+
+.text-nord11,
+.text-danger {
 	color: var(--nord11);
 }
-.text-nord12,.text-warning {
+
+.text-nord12,
+.text-warning {
 	color: var(--nord12);
 }
+
 .text-nord13 {
 	color: var(--nord13);
 }
-.text-nord14,.text-success {
+
+.text-nord14,
+.text-success {
 	color: var(--nord14);
 }
+
 .text-nord15 {
 	color: var(--nord15);
 }
 
-
 .bg-deep-dark {
-	color: #242933
+	color: #242933;
 }
+
 .bg-nord0 {
 	background-color: var(--nord0);
 }
-.bg-nord1,.bg-secondary {
+
+.bg-nord1,
+.bg-secondary {
 	background-color: var(--nord1);
 }
+
 .bg-nord2 {
 	background-color: var(--nord2);
 }
+
 .bg-nord3 {
 	background-color: var(--nord3);
 }
+
 .bg-nord4 {
 	background-color: var(--nord4);
 }
+
 .bg-nord5 {
 	background-color: var(--nord5);
 }
+
 .bg-nord6 {
 	background-color: var(--nord6);
 }
-.bg-nord7,.bg-primary {
+
+.bg-nord7,
+.bg-primary {
 	background-color: var(--nord7);
 }
+
 .bg-nord8 {
 	background-color: var(--nord8);
 }
+
 .bg-nord9 {
 	background-color: var(--nord9);
 }
-.bg-nord10,.bg-info {
+
+.bg-nord10,
+.bg-info {
 	background-color: var(--nord10);
 }
-.bg-nord11,.bg-danger {
+
+.bg-nord11,
+.bg-danger {
 	background-color: var(--nord11);
 }
-.bg-nord12,.bg-warning {
+
+.bg-nord12,
+.bg-warning {
 	background-color: var(--nord12);
 }
+
 .bg-nord13 {
 	background-color: var(--nord13);
 }
-.bg-nord14,.bg-success {
+
+.bg-nord14,
+.bg-success {
 	background-color: var(--nord14);
 }
+
 .bg-nord15 {
 	background-color: var(--nord15);
 }

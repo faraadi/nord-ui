@@ -2,7 +2,7 @@
 	display: inline-block;
 	position: relative;
 	text-decoration: underline;
-	    text-decoration-style: dotted;
+	text-decoration-style: dotted;
 }
 
 .tooltip {
@@ -10,18 +10,17 @@
 	justify-content: center;
 	align-items: center;
 	width: auto;
-    min-width: max-content;
-
+	min-width: max-content;
 	position: absolute;
 	top: calc(100% + var(--tooltip-offset));
 	left: 0;
 	right: 0;
 	z-index: 1;
-
 	visibility: hidden;
 	transition: opacity var(--default--transition);
 	opacity: 0;
 }
+
 .tooltip-text {
 	padding: 5px 10px;
 	background-color: var(--nord0);
@@ -46,19 +45,17 @@
 }
 
 .tooltip.tooltip-right {
-    top: 0;
-    bottom: 0;
-    left: calc(100% + var(--tooltip-offset));
-    /*right: calc(-100% - var(--tooltip-offset));*/
-    right: unset;
+	top: 0;
+	bottom: 0;
+	left: calc(100% + var(--tooltip-offset));
+	right: unset;
 }
 
 .tooltip.tooltip-left {
-    top: 0;
-    bottom: 0;
-    right: calc(100% + var(--tooltip-offset));;
-    /*left: calc(-100% - var(--tooltip-offset));*/
-    left: unset;
+	top: 0;
+	bottom: 0;
+	right: calc(100% + var(--tooltip-offset));
+	left: unset;
 }
 
 .tooltip-target.minimal {

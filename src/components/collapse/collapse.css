@@ -1,14 +1,19 @@
 .collapse-label {
 	cursor: pointer;
 }
+
 .collapse-content {
 	max-height: 0;
 	overflow: hidden;
 	transition: 0.5s ease;
 }
+
 .collapse-input {
-	display: none
+	display: none;
 }
-.collapse.open .collapse-content, .collapse-input:checked + .collapse-content, .collapse-input:checked + .collapse-label + .collapse-content {
+
+.collapse.open .collapse-content,
+.collapse-input:checked + .collapse-content,
+.collapse-input:checked + .collapse-label + .collapse-content {
 	max-height: 100vh;
 }

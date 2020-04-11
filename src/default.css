@@ -1,16 +1,19 @@
 * {
-    box-sizing: border-box
+	box-sizing: border-box;
 }
+
 img {
-    width: 100%
+	width: 100%;
 }
+
 body {
-    margin: 0;
-    background-color: var(--nord6);
+	margin: 0;
+	background-color: var(--nord6);
 	transition-duration: var(--default--transition);
 	transition-property: color, background-color;
 	overflow-x: hidden;
 }
+
 a {
 	text-decoration: none;
 	color: var(--nord7);
