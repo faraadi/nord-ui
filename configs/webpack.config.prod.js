@@ -50,7 +50,11 @@ const singleBundleConfig = {
             filename: '[name].min.css',
             ignoreOrder: false
         }),
-        new FixStyleOnlyEntriesPlugin(),
+		new FixStyleOnlyEntriesPlugin(),
+		new StylelintPlugin({
+			configFile: path.resolve(rootPath, ".stylelintrc"),
+			files: "src/*"
+		})
     ]
 };
 
