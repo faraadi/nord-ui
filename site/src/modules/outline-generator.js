@@ -17,7 +17,7 @@ export default function outlineGenerator(selector) {
 			const outline = document.createElement("a");
 			outline.className = "outline-link " + String(heading.nodeName).toLowerCase();
 			outline.innerText = heading.innerText;
-			outline.href = window.location.href + "#" + heading.id;
+			outline.href = window.location.origin + window.location.pathname + "#" + heading.id;
 			const li = document.createElement("li");
 			li.append(outline);
 			outlineList.append(li);

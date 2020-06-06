@@ -136,16 +136,13 @@ input:checked + .doc-category-title {
 	border-bottom: 1px dotted var(--nord7);
 }
 
-.docs-bottom-navigation {
-	background: transparent;
-	outline: none;
-	cursor: pointer;
-	padding: 10px;
-	border: 2px solid var(--nord7);
-	border-radius: 4px;
-	color: inherit;
-	display: block;
+.docs-bottom-navigation-container {
 	margin-bottom: 100px;
+}
+
+.docs-bottom-navigation {
+	cursor: pointer;
+	color: var(--nord7);
 }
 .docs-bottom-navigation.previous {
 	text-align: left;
@@ -155,9 +152,8 @@ input:checked + .doc-category-title {
 	text-align: right;
 }
 
-.docs-bottom-navigation h4 {
-	margin: 10px 0;
-	font-size: 1.2em;
+.docs-bottom-navigation {
+	font-size: 1.5em;
 }
 
 body:not(.dark) {

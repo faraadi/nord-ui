@@ -5,7 +5,6 @@ const BottomNavigation = {
 	init(callback) {
 		Nodes.get(".docs-bottom-navigation.previous").onclick = callback;
 		Nodes.get(".docs-bottom-navigation.next").onclick = callback;
-
 	},
 	getLinksData(docName) {
 		const docsList = Object.keys(docsModel);
@@ -49,7 +48,7 @@ const BottomNavigation = {
 		const previousBtn = Nodes.get(".docs-bottom-navigation.previous");
 		if (data.previous) {
 			previousBtn.href = data.previous.href;
-			previousBtn.innerHTML = "&laquo;" + data.previous.text;
+			previousBtn.innerHTML = "&laquo;&nbsp;" + data.previous.text;
 			previousBtn.style.display = "block";
 		}
 		else previousBtn.style.display = "none";
@@ -57,7 +56,7 @@ const BottomNavigation = {
 		const nextBtn = Nodes.get(".docs-bottom-navigation.next");
 		if(data.next) {
 			nextBtn.href = data.next.href;
-			nextBtn.innerHTML = data.next.text + "&raquo;";
+			nextBtn.innerHTML = data.next.text + "&nbsp;&raquo;";
 			nextBtn.style.display = "block";
 		}
 		else nextBtn.style.display = "none";
