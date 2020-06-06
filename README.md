@@ -1,7 +1,7 @@
 <center align='center'>
 	<p align='center'>
 		<a href='https://nordui.netlify.com' align='center'>
-			<img align="center" src="https://nordui.netlify.com/images/logo-background-dark.svg" alt="Nord UI Logo">
+			<img align="center" src="https://raw.githubusercontent.com/faraadi/nord-ui/master/site/public/images/logo-background-dark.svg" alt="Nord UI Logo">
 		</a>
 	</p>
     <h3 align='center'>
@@ -14,17 +14,17 @@
 
 <hr>
 
-This project is in active development and is not intended to use for production 🚧
+This project is still in active development and changes may be applied until we hit version 1.0
 
-check documentations: [https://nordui.netlify.com](https://nordui.netlify.com)
+documentations: [https://nordui.netlify.com](https://nordui.netlify.com)
 
 ## installation
 
 install using NPM:
 
-````sh
+```sh
 npm install nord-ui
-````
+```
 
 or Yarn:
 
@@ -50,7 +50,7 @@ import 'nord-ui'
 
 ## Contribution
 
-if you're interested in contributing on this package, contact my [email](mailto:faradidev@gmail.com)
+if you're interested in contributing, contact [me](mailto:faradidev@gmail.com)
 
 <hr>
 
